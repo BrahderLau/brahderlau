@@ -1,0 +1,6 @@
+[C001-IMT]  Introduction to Management,Level 1,1 Semester,RM2000
+[C002-IDB]  Introduction to Databases,Level 1,1 Semester,RM2000
+[C003-ENTS]  Enterprise System, Level 2,1 Semester,RM2000
+[C004-OODJ]  Object Oriented Development with Java,Level 2,1 Semester,RM2000
+
+[C009-AAA]  AAA,Level 1,1 Semester,RM2000,

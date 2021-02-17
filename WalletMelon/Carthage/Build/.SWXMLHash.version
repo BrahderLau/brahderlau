@@ -1,0 +1,10 @@
+{
+  "commitish" : "4.9.0",
+  "iOS" : [
+    {
+      "name" : "SWXMLHash",
+      "hash" : "13e4e33a56805071d1d48a6f783aaa0d0e1b830258da4246ff8d89ea7476ffe7",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+    }
+  ]
+}

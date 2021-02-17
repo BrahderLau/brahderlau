@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>444998732608-hkcovqjm92bki0p42bhgjhv8qe78h4pi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.444998732608-hkcovqjm92bki0p42bhgjhv8qe78h4pi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCL5v36fWfnI77HnkRdAC8LxWzob-QkoHQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>444998732608</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.brahdertechz.Walletmelon</string>
+	<key>PROJECT_ID</key>
+	<string>walletmelon-fb8ba</string>
+	<key>STORAGE_BUCKET</key>
+	<string>walletmelon-fb8ba.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:444998732608:ios:7c761274c0b8f4e57e88a5</string>
+	<key>DATABASE_URL</key>
+	<string>https://walletmelon-fb8ba.firebaseio.com</string>
+</dict>
+</plist>

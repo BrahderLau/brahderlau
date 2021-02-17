@@ -1,0 +1,152 @@
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTransfer.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration updated (26102018)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTransfer.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration (Restructuring progress 50%)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.OrderSummary.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.OrderSummary.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\Login and Registration 29102018\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerCreditTransfer.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerCreditTransfer.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.OrderSummary.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerCreditTransfer.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.OrderSummary.resources
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+C:\Users\Asus\Desktop\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerCreditTransfer.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.OrderSummary.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.AddItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SearchItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.UpdateItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\IOOP Group Assignment Project (Finalised)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.ReportView.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\bin\Debug\User registration by Nesa.exe.config
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\bin\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\bin\Debug\User registration by Nesa.pdb
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csprojAssemblyReference.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.AddItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerHome.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerOrder.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerQuickChange.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerSearch.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerTopUp.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerCreditTransfer.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.PaymentReceipt.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.ReportView.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SearchItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.SystemManagement.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.MainMenu.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.StaffManagerLogin.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.CustomerDetails.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.Properties.Resources.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User_registration_by_Nesa.UpdateItem.resources
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.GenerateResource.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\IOOP Group Assignment 2018.csproj.CoreCompileInputs.cache
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User registration by Nesa.exe
+D:\DEGREE\LEVEL 1\SEM 2\IOOP\IOOP Group Assignment 2018\IOOP Group Assignment Project (Finalised) (2)\User registration by Nesa\obj\Debug\User registration by Nesa.pdb

@@ -1,0 +1,6 @@
+framework module Pods_WalletMelon {
+  umbrella header "Pods-WalletMelon-umbrella.h"
+
+  export *
+  module * { export * }
+}

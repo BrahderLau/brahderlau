@@ -1,0 +1,10 @@
+{
+  "commitish" : "0.9.5",
+  "iOS" : [
+    {
+      "name" : "Macaw",
+      "hash" : "6e68682b72796771843486d4d46f1da7e0fff625c1019440a999c9d960d12c65",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+    }
+  ]
+}

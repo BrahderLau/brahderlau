@@ -1,0 +1,12 @@
+TP045515,TP045515,Lau,Level 1,012-5069787,khlau_1012@hotmail.com,[C002-IDB]  Introduction to Databases,[C003-ENTS]  Enterprise System,[C004-OODJ]  Object Oriented Development with Java,TP045515,TP045515,Lau,Level 1,012-5069787,khlau_1012@hotmail.com,[C002-IDB]  Introduction to Databases,[C003-ENTS]  Enterprise System,[C004-OODJ]  Object Oriented Development with Java,TP044777,TP044777,LeXin,Level 2,012-7939931,lexin@live.com,[C002-IDB]  Introduction to Databases,[C009-AAA]  AAA,
+TP045515,TP045515,Lau,Level 1,012-5069787,khlau_1012@hotmail.com,[C002-IDB]  Introduction to Databases,[C003-ENTS]  Enterprise System,[C004-OODJ]  Object Oriented Development with Java,TP044777,TP044777,LeXin,Level 2,012-7939931,lexin@live.com,[C002-IDB]  Introduction to Databases,
+TP044860,TP044860,Seven,Level 3,010-8030515,xuewen0515tee@gmail.com
+TP099999,TP099999,TaufuFar,2,012-5069787,khlau1012@gmail.com
+TP055555,TP055555,modesto,1,014-5678101,bobo@bobo.com
+TP078888,123,abc,1,012-7896543,abc@live.com
+,,,1,,
+,,,1,,
+,,,1,,
+TP011119,1234,lisa,2,012-5069777,live@live.com
+TP00007,,Tanveer,1,,
+TP00007,1234,Tanveer,1,rewfs,tanveer@live.com

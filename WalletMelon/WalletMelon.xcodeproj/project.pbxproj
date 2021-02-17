@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0632F9CC236AD9DD00141CEB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632F9CB236AD9DD00141CEB /* Extension.swift */; };
+		06BD8D282366CB900035D9F9 /* Loading Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D1F2366CB900035D9F9 /* Loading Screen.png */; };
+		06BD8D292366CB900035D9F9 /* Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D202366CB900035D9F9 /* Card.png */; };
+		06BD8D2A2366CB900035D9F9 /* Giant.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D212366CB900035D9F9 /* Giant.png */; };
+		06BD8D2B2366CB900035D9F9 /* Pie.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D222366CB900035D9F9 /* Pie.png */; };
+		06BD8D2C2366CB900035D9F9 /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D232366CB900035D9F9 /* Add.png */; };
+		06BD8D2D2366CB900035D9F9 /* Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D242366CB900035D9F9 /* Bar.png */; };
+		06BD8D2E2366CB900035D9F9 /* Tealive.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D252366CB900035D9F9 /* Tealive.png */; };
+		06BD8D2F2366CB900035D9F9 /* Walletmelon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D262366CB900035D9F9 /* Walletmelon.png */; };
+		06BD8D302366CB900035D9F9 /* Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D272366CB900035D9F9 /* Friends.png */; };
+		06BD8D322366CBC10035D9F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D312366CBC10035D9F9 /* Constants.swift */; };
+		06BD8D3623670BA90035D9F9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D3523670BA90035D9F9 /* LoginVC.swift */; };
+		06BD8D382367F1520035D9F9 /* MacawChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D372367F1520035D9F9 /* MacawChartView.swift */; };
+		06BD8D3A2367FC340035D9F9 /* walletMelon card.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BD8D392367FC330035D9F9 /* walletMelon card.png */; };
+		06BD8D3C2367FF1A0035D9F9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D3B2367FF1A0035D9F9 /* HomeVC.swift */; };
+		06BD8D40236802A30035D9F9 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D3F236802A30035D9F9 /* CardVC.swift */; };
+		06BD8D47236946400035D9F9 /* AnalysisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8D46236946400035D9F9 /* AnalysisData.swift */; };
+		64C2B9772365E50800282FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2B9762365E50800282FB3 /* AppDelegate.swift */; };
+		64C2B9792365E50800282FB3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2B9782365E50800282FB3 /* MainVC.swift */; };
+		64C2B97C2365E50800282FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C2B97A2365E50800282FB3 /* Main.storyboard */; };
+		64C2B97F2365E50800282FB3 /* WalletMelon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64C2B97D2365E50800282FB3 /* WalletMelon.xcdatamodeld */; };
+		64C2B9812365E50B00282FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2B9802365E50B00282FB3 /* Assets.xcassets */; };
+		64C2B9842365E50B00282FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C2B9822365E50B00282FB3 /* LaunchScreen.storyboard */; };
+		64C2B98C2365E90700282FB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C2B98B2365E90700282FB3 /* GoogleService-Info.plist */; };
+		BD3C80E0F1D02C0513BBEBDC /* Pods_WalletMelon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A64DEF4A48FBFACCE0395 /* Pods_WalletMelon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0632F9CB236AD9DD00141CEB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		06BD8D1F2366CB900035D9F9 /* Loading Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Loading Screen.png"; sourceTree = "<group>"; };
+		06BD8D202366CB900035D9F9 /* Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card.png; sourceTree = "<group>"; };
+		06BD8D212366CB900035D9F9 /* Giant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Giant.png; sourceTree = "<group>"; };
+		06BD8D222366CB900035D9F9 /* Pie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pie.png; sourceTree = "<group>"; };
+		06BD8D232366CB900035D9F9 /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
+		06BD8D242366CB900035D9F9 /* Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bar.png; sourceTree = "<group>"; };
+		06BD8D252366CB900035D9F9 /* Tealive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tealive.png; sourceTree = "<group>"; };
+		06BD8D262366CB900035D9F9 /* Walletmelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Walletmelon.png; sourceTree = "<group>"; };
+		06BD8D272366CB900035D9F9 /* Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Friends.png; sourceTree = "<group>"; };
+		06BD8D312366CBC10035D9F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		06BD8D3523670BA90035D9F9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		06BD8D372367F1520035D9F9 /* MacawChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawChartView.swift; sourceTree = "<group>"; };
+		06BD8D392367FC330035D9F9 /* walletMelon card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletMelon card.png"; sourceTree = "<group>"; };
+		06BD8D3B2367FF1A0035D9F9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		06BD8D3F236802A30035D9F9 /* CardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		06BD8D46236946400035D9F9 /* AnalysisData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisData.swift; sourceTree = "<group>"; };
+		151982325421C1A35634E504 /* Pods-WalletMelon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletMelon.release.xcconfig"; path = "Target Support Files/Pods-WalletMelon/Pods-WalletMelon.release.xcconfig"; sourceTree = "<group>"; };
+		64C2B9732365E50800282FB3 /* WalletMelon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletMelon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C2B9762365E50800282FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64C2B9782365E50800282FB3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		64C2B97B2365E50800282FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64C2B97E2365E50800282FB3 /* WalletMelon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalletMelon.xcdatamodel; sourceTree = "<group>"; };
+		64C2B9802365E50B00282FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C2B9832365E50B00282FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64C2B9852365E50B00282FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C2B98B2365E90700282FB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		880ADC0FEA64244947DB4059 /* Pods-WalletMelon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletMelon.debug.xcconfig"; path = "Target Support Files/Pods-WalletMelon/Pods-WalletMelon.debug.xcconfig"; sourceTree = "<group>"; };
+		987A64DEF4A48FBFACCE0395 /* Pods_WalletMelon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletMelon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64C2B9702365E50800282FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3C80E0F1D02C0513BBEBDC /* Pods_WalletMelon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BD8D192366C56A0035D9F9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				06BD8D312366CBC10035D9F9 /* Constants.swift */,
+				0632F9CB236AD9DD00141CEB /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		06BD8D1A2366C5730035D9F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06BD8D46236946400035D9F9 /* AnalysisData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06BD8D1C2366C5830035D9F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06BD8D372367F1520035D9F9 /* MacawChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06BD8D1D2366C5950035D9F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64C2B9782365E50800282FB3 /* MainVC.swift */,
+				06BD8D3523670BA90035D9F9 /* LoginVC.swift */,
+				06BD8D3B2367FF1A0035D9F9 /* HomeVC.swift */,
+				06BD8D3F236802A30035D9F9 /* CardVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06BD8D1E2366C96B0035D9F9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				06BD8D232366CB900035D9F9 /* Add.png */,
+				06BD8D242366CB900035D9F9 /* Bar.png */,
+				06BD8D202366CB900035D9F9 /* Card.png */,
+				06BD8D272366CB900035D9F9 /* Friends.png */,
+				06BD8D212366CB900035D9F9 /* Giant.png */,
+				06BD8D392367FC330035D9F9 /* walletMelon card.png */,
+				06BD8D1F2366CB900035D9F9 /* Loading Screen.png */,
+				06BD8D222366CB900035D9F9 /* Pie.png */,
+				06BD8D252366CB900035D9F9 /* Tealive.png */,
+				06BD8D262366CB900035D9F9 /* Walletmelon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		30CB9D1B4381F8C8F1EDDD58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				987A64DEF4A48FBFACCE0395 /* Pods_WalletMelon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C2B96A2365E50800282FB3 = {
+			isa = PBXGroup;
+			children = (
+				64C2B9752365E50800282FB3 /* WalletMelon */,
+				64C2B9742365E50800282FB3 /* Products */,
+				EC7B274B20DB6289864F01B8 /* Pods */,
+				30CB9D1B4381F8C8F1EDDD58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64C2B9742365E50800282FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64C2B9732365E50800282FB3 /* WalletMelon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64C2B9752365E50800282FB3 /* WalletMelon */ = {
+			isa = PBXGroup;
+			children = (
+				06BD8D192366C56A0035D9F9 /* Utilities */,
+				06BD8D1A2366C5730035D9F9 /* Model */,
+				06BD8D1C2366C5830035D9F9 /* View */,
+				06BD8D1D2366C5950035D9F9 /* Controller */,
+				64C2B9762365E50800282FB3 /* AppDelegate.swift */,
+				64C2B97A2365E50800282FB3 /* Main.storyboard */,
+				64C2B9802365E50B00282FB3 /* Assets.xcassets */,
+				06BD8D1E2366C96B0035D9F9 /* Images */,
+				64C2B9822365E50B00282FB3 /* LaunchScreen.storyboard */,
+				64C2B98B2365E90700282FB3 /* GoogleService-Info.plist */,
+				64C2B9852365E50B00282FB3 /* Info.plist */,
+				64C2B97D2365E50800282FB3 /* WalletMelon.xcdatamodeld */,
+			);
+			path = WalletMelon;
+			sourceTree = "<group>";
+		};
+		EC7B274B20DB6289864F01B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				880ADC0FEA64244947DB4059 /* Pods-WalletMelon.debug.xcconfig */,
+				151982325421C1A35634E504 /* Pods-WalletMelon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64C2B9722365E50800282FB3 /* WalletMelon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C2B9882365E50B00282FB3 /* Build configuration list for PBXNativeTarget "WalletMelon" */;
+			buildPhases = (
+				B3BB7CBE647A854741A9FBD6 /* [CP] Check Pods Manifest.lock */,
+				64C2B96F2365E50800282FB3 /* Sources */,
+				64C2B9702365E50800282FB3 /* Frameworks */,
+				64C2B9712365E50800282FB3 /* Resources */,
+				147ABDD18CDC342E4755F875 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletMelon;
+			productName = WalletMelon;
+			productReference = 64C2B9732365E50800282FB3 /* WalletMelon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64C2B96B2365E50800282FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = brahdertechz;
+				TargetAttributes = {
+					64C2B9722365E50800282FB3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 64C2B96E2365E50800282FB3 /* Build configuration list for PBXProject "WalletMelon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64C2B96A2365E50800282FB3;
+			productRefGroup = 64C2B9742365E50800282FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64C2B9722365E50800282FB3 /* WalletMelon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64C2B9712365E50800282FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BD8D2B2366CB900035D9F9 /* Pie.png in Resources */,
+				06BD8D3A2367FC340035D9F9 /* walletMelon card.png in Resources */,
+				64C2B9842365E50B00282FB3 /* LaunchScreen.storyboard in Resources */,
+				06BD8D2F2366CB900035D9F9 /* Walletmelon.png in Resources */,
+				64C2B98C2365E90700282FB3 /* GoogleService-Info.plist in Resources */,
+				06BD8D2C2366CB900035D9F9 /* Add.png in Resources */,
+				64C2B9812365E50B00282FB3 /* Assets.xcassets in Resources */,
+				06BD8D2A2366CB900035D9F9 /* Giant.png in Resources */,
+				06BD8D292366CB900035D9F9 /* Card.png in Resources */,
+				06BD8D282366CB900035D9F9 /* Loading Screen.png in Resources */,
+				06BD8D2E2366CB900035D9F9 /* Tealive.png in Resources */,
+				64C2B97C2365E50800282FB3 /* Main.storyboard in Resources */,
+				06BD8D2D2366CB900035D9F9 /* Bar.png in Resources */,
+				06BD8D302366CB900035D9F9 /* Friends.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147ABDD18CDC342E4755F875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletMelon/Pods-WalletMelon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletMelon/Pods-WalletMelon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalletMelon/Pods-WalletMelon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BB7CBE647A854741A9FBD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletMelon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64C2B96F2365E50800282FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BD8D47236946400035D9F9 /* AnalysisData.swift in Sources */,
+				06BD8D40236802A30035D9F9 /* CardVC.swift in Sources */,
+				06BD8D322366CBC10035D9F9 /* Constants.swift in Sources */,
+				06BD8D3C2367FF1A0035D9F9 /* HomeVC.swift in Sources */,
+				64C2B9792365E50800282FB3 /* MainVC.swift in Sources */,
+				0632F9CC236AD9DD00141CEB /* Extension.swift in Sources */,
+				64C2B97F2365E50800282FB3 /* WalletMelon.xcdatamodeld in Sources */,
+				64C2B9772365E50800282FB3 /* AppDelegate.swift in Sources */,
+				06BD8D3623670BA90035D9F9 /* LoginVC.swift in Sources */,
+				06BD8D382367F1520035D9F9 /* MacawChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64C2B97A2365E50800282FB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C2B97B2365E50800282FB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64C2B9822365E50B00282FB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C2B9832365E50B00282FB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64C2B9862365E50B00282FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64C2B9872365E50B00282FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64C2B9892365E50B00282FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880ADC0FEA64244947DB4059 /* Pods-WalletMelon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WalletMelon/WalletMelon.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLYWYLJGYL;
+				INFOPLIST_FILE = WalletMelon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahdertechz.Walletmelon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C2B98A2365E50B00282FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151982325421C1A35634E504 /* Pods-WalletMelon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WalletMelon/WalletMelon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLYWYLJGYL;
+				INFOPLIST_FILE = WalletMelon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahdertechz.Walletmelon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64C2B96E2365E50800282FB3 /* Build configuration list for PBXProject "WalletMelon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C2B9862365E50B00282FB3 /* Debug */,
+				64C2B9872365E50B00282FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C2B9882365E50B00282FB3 /* Build configuration list for PBXNativeTarget "WalletMelon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C2B9892365E50B00282FB3 /* Debug */,
+				64C2B98A2365E50B00282FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64C2B97D2365E50800282FB3 /* WalletMelon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				64C2B97E2365E50800282FB3 /* WalletMelon.xcdatamodel */,
+			);
+			currentVersion = 64C2B97E2365E50800282FB3 /* WalletMelon.xcdatamodel */;
+			path = WalletMelon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 64C2B96B2365E50800282FB3 /* Project object */;
+}
