@@ -1,32 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
-import InfoIcon from '@material-ui/icons/Info'
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import ChatInput from './ChatInput'
+import ChatMessage from './ChatMessage';
 
 function Chat() {
     return (
         <Container>
-            <ChannelHeaderContainer>
-                <ChannelContainer>
-                    <ChannelTitle>
+            <Header>
+
+                <Channel>
+                    <ChannelName>
                         # Channel 1
-                    </ChannelTitle>
-                    <ChannelDescription>
+                    </ChannelName>
+                    <ChannelInfo>
                         This is the first channel
-                    </ChannelDescription>
-                </ChannelContainer>
-                <ChannelDetailContainer>
+                    </ChannelInfo>
+                </Channel>
+                <ChannelDetails>
                     <div>
                         Details
                     </div>
-                    <InfoIconButton>
-                        <InfoIcon />
-                    </InfoIconButton>          
-                </ChannelDetailContainer>
+                    <Info>
+                        <InfoOutlinedIcon />
+                    </Info>          
+                </ChannelDetails>
 
-            </ChannelHeaderContainer>
-            <MainChatContainer>
+            </Header>
+            <MessageContainer>
+                <ChatMessage />
+            </MessageContainer>
+            <ChatInput>
 
-            </MainChatContainer>
+            </ChatInput>
         </Container>
     )
 }
@@ -35,41 +41,45 @@ export default Chat
 
 const Container = styled.div`
     background: white;
+    display: grid; //grid is going to split the components into three rows.
+    grid-template-rows: 64px auto min-content // first, second(auto because the chat expands), third
 `
 
-const ChannelHeaderContainer = styled.div`
+const Header = styled.div`
     height: 64px;
     display: flex;
     align-items: center;
-    padding-left: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(220,220,220);
+    border-bottom: 1px solid rgb(83, 39, 83,.13);
 `
 
-const ChannelContainer = styled.div`
+const Channel = styled.div`
     
 `
 
-const ChannelTitle = styled.div`
-    font-weight: bold;
+const ChannelName = styled.div`
+    font-weight: 700;
 `
 
-const ChannelDescription = styled.div`
-
+const ChannelInfo = styled.div`
+    font-weight: 400;
+    color: #606060;
+    font-size: 13px;
+    margin-top: 8px
 `
 
-const ChannelDetailContainer = styled.div`
+const ChannelDetails = styled.div`
     display: flex;
     align-items: center;
-    margin-right: 19px;
+    color: #606060;
 `
 
-const InfoIconButton = styled.div`
-    margin-left: 16px;
-    margin-top: 5px;
-    cursor: pointer;
+const Info = styled(InfoOutlinedIcon)`
+    margin-left: 10px;
 `
 
-const MainChatContainer = styled.div`
+const MessageContainer = styled.div`
 
 `
