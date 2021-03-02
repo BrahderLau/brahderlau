@@ -15,7 +15,7 @@ const greeting = {
     "A Young and Passionate Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1mWmZuDjwtTYRYoXNUKGvZzlUrkmRQ4sY/view?usp=sharing",
+    "https://drive.google.com/file/d/19JIyg4Y3qwtlbiJzXweqPHuXOJNCHtFj/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -272,16 +272,6 @@ const achievementSection = {
           url:
             "https://drive.google.com/file/d/1zVBhvAHvp8qnOVYMKqKQZDsE07Gp3wQC/view?usp=sharing"
         }
-        // {
-        //   name: "Award Letter",
-        //   url:
-        //     ""
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url:
-        //     ""
-        // }
       ]
     },
     {

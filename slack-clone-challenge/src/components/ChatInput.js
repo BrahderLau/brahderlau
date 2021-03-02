@@ -1,17 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import SendIcon from '@material-ui/icons/Send';
 import { shortcutButton, messageLeftBarButtons, messageRightBarButtons } from '../data/MessageButtons'
 import Tooltip from "@material-ui/core/Tooltip";
 
-function ChatInput() {
+function ChatInput({ sendMessage }) {
+
+    const [input, setInput] = useState("");
+    const send = (e) => {
+        e.preventDefault(); //prevent refreshing page
+        if(!input) return;
+        sendMessage(input);
+        setInput("");
+    }
+
     return (
         <Container>
             <InputContainer>
                 <MessageInput>  
                     <form>
-                        <input type="text" placeholder="Message # Channel 1" />
-                        <SendButton>
+                        <input 
+                            onChange={(e)=>setInput(e.target.value)}
+                            type="text"
+                            value={input}
+                            placeholder="Message here..." />
+                        <SendButton 
+                            type="submit"
+                            onClick={send}>
                             <Send />
                         </SendButton>
                     </form>
@@ -81,10 +96,10 @@ const InputContainer = styled.div`
 `
 
 const MessageInput = styled.div`
-    border-bottom: 1px solid rgb(83, 39, 83,.13);
+    border-bottom: 1px solid #808D8E;// rgb(83, 39, 83,.13);
 `
 
-const SendButton = styled.div`
+const SendButton = styled.button`
     background: #007a5a;
     border-radius: 2px;
     width: 32px;
@@ -100,7 +115,7 @@ const SendButton = styled.div`
     }
 
     :hover {
-        background: rgb(83, 39, 83,.13);
+        background: #ffa500;//rgb(83, 39, 83,.13);
     }
 `
 
@@ -125,12 +140,13 @@ const LeftMessageBar = styled.div`
 const ShortcutMessageButton = styled.div`
     border-right: 1px solid rgb(83, 39, 83,.13);
     :hover {
-        background: rgb(245,245,245);
+        background: #ffa500;//rgb(245,245,245);
     }
     padding-left: 3px;
     padding-right: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
 `
 
 
@@ -140,22 +156,24 @@ const RightMessageBar = styled.div`
 
 const LeftMessageButton = styled.div`
     :hover {
-        background: rgb(245,245,245);
+        background: #ffa500;//rgb(245,245,245);
     }
     padding-left: 3px;
     padding-right: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
 `
 
 const RightMessageButton = styled.div`
     :hover {
-        background: rgb(245,245,245);
+        background: #ffa500;//rgb(245,245,245);
     }
     padding-left: 3px;
     padding-right: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
 `
 
 // styled.span

@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function ChatMessage() {
+function ChatMessage({ text, name, image, timestamp }) { //unfold props
+    
     return (
         <Container>
             <UserAvatar>
-                <img src="https://brahderlau.netlify.app/static/media/brahderlauPotraitNew.92fa9133.png" />
+                <img src={image}/>
             </UserAvatar>
             <MessageContent>
                 <Name>
-                    BrahderLau
-                    <span>2/23/2021 11:13:55 AM</span>
+                    {name}
+                    <span>{new Date(timestamp.toDate()).toUTCString()}</span>
                 </Name>
                 <Text>
-                    This is the best Challenge
+                    {text}
                 </Text>
             </MessageContent>
         </Container>
@@ -27,7 +28,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     :hover {
-        background: #FFFAF0;
+        background: #ffa500;// #FFFAF0;
     }
 `
 

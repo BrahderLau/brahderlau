@@ -3,11 +3,23 @@ import styled from 'styled-components'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import { sidebarItemsData } from '../data/SidebarData'
 import AddIcon from '@material-ui/icons/Add';
-//import { channelItemsData } from '../data/ChannelData'
+import DeleteIcon from '@material-ui/icons/Delete';
 import db from '../firebase'
+import { useHistory } from 'react-router-dom'
+import { green } from '@material-ui/core/colors';
+
+//history allows us to go from one page to another page and so forth.
 
 function Sidebar(props) {
 
+    const history = useHistory();
+
+    const goToChannel = (id) => {
+        if (id){
+            console.log(id);
+            history.push(`/room/${id}`) //this will give a link to uniquely identify these channels.
+        }
+    }
     const addChannel = () => {
         const promptName = prompt("Enter Channel name");
         if(promptName){
@@ -20,9 +32,14 @@ function Sidebar(props) {
     return (
         <Container>
             <WorkspaceContainer>
-                <Name>
-                    Slack 2.0
-                </Name>
+                <AppInfo>
+                    <Logo>
+                        <img src="http://assets.stickpng.com/images/5cb480cd5f1b6d3fbadece79.png" />
+                    </Logo>
+                    <Name>
+                        Slack Clone
+                    </Name>
+                </AppInfo>
                 <NewMessage>
                     <AddCircleOutlineIcon/>
                 </NewMessage>
@@ -39,14 +56,17 @@ function Sidebar(props) {
                 }
             </MainChannels>
             <ChannelsContainer>
-                <NewChannelContainer>
+                <ChannelAction>
                     <div>
                         Channels
                     </div>
+                    <DeleteChannel>
+                        <DeleteIcon onClick={DeleteChannel}/>
+                    </DeleteChannel>
                     <NewChannel>
                         <AddIcon onClick={addChannel}/>
                     </NewChannel>
-                </NewChannelContainer> 
+                </ChannelAction> 
                 <ChannelsList>
                     {
                         //looping every single main channel items
@@ -56,7 +76,7 @@ function Sidebar(props) {
                         //     </Channel>
                         // ))
                         props.rooms.map(item => (
-                            <Channel>
+                            <Channel onClick={()=>goToChannel(item.id)}>
                                 # {item.name}
                             </Channel>
                         ))
@@ -70,28 +90,29 @@ function Sidebar(props) {
 export default Sidebar
 
 const Container = styled.div`
-    background: #3F0E40;
+    //background: #3F0E40;
+    border-right: 1px solid #606060;
 `
 
 const WorkspaceContainer = styled.div`
-    color: white;
+    //color: white;
     height: 64px;
     display: flex;
     align-items: center;
     padding-left: 19px;
     justify-content: space-between;
-    border-bottom: 1px solid  #532753;
+    border-bottom: 1px solid #606060;// #532753;
 `
 
 const Name = styled.div`
-
+    margin-left: 10px;
 `
 
 const NewMessage = styled.div`
     width: 36px;
     height: 36px;
-    background: white;
-    color: #3F0E40;
+    //background: white;
+    //color: #3F0E40;
     fill: #3F0E40;
     display: flex;
     justify-content: center;
@@ -103,10 +124,12 @@ const NewMessage = styled.div`
 
 const MainChannels = styled.div`
     padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #606060;// #532753;
 `
 
 const MainChannelItem = styled.div`
-    color: rgb(188,177,188);
+    //color: rgb(188,177,188);
     display: grid;
     grid-template-columns: 15% auto;
     height: 28px;
@@ -114,16 +137,16 @@ const MainChannelItem = styled.div`
     padding-left: 19px;
     cursor: pointer;
     :hover {
-        background: #350D36;
+        background: #ffa500;//#350D36;
     }
 `
 
 const ChannelsContainer = styled.div`
-    color: rgb(188,171,188);
+    //color: rgb(188,171,188);
     margin-top: 10px;
 `
 
-const NewChannelContainer = styled.div`
+const ChannelAction = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,13 +166,38 @@ const Channel = styled.div`
     padding-left: 19px;
     cursor: pointer;
     :hover {
-        background: #350D36;
+        background: #ffa500;//#350D36;
     }
 `
 const NewChannel = styled.div`
     cursor: pointer;
     :hover {
-        background: #350D36;
+        background: #ffa500;//#350D36;
     }
     padding-top: 5px;
+`
+
+const DeleteChannel = styled.div`
+    cursor: pointer;
+    :hover {
+        background: #ffa500;//#350D36;
+    }
+    padding-top: 5px;
+    margin-left: 108px;
+`
+
+const Logo = styled.div`
+    width: 28px;
+    height: 28px;
+
+
+    img {
+        width: 100%
+    }
+    
+`
+
+const AppInfo = styled.div`
+    display: flex;
+    align-items: center;
 `

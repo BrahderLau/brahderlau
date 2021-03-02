@@ -13,12 +13,12 @@ import TextFormatIcon from '@material-ui/icons/TextFormat';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 
-export const shortcutButton = {
+const shortcutButton = {
     icon: <FlashOnIcon />,
     text: "Shortcuts"
 }
 
-export const messageLeftBarButtons = [
+const messageLeftBarButtons = [
     {
         icon: <FormatBoldIcon />,
         text: "Bold"
@@ -49,7 +49,7 @@ export const messageLeftBarButtons = [
     },
 ]
 
-export const messageRightBarButtons = [
+const messageRightBarButtons = [
     {
         icon: <MoreHorizIcon />,
         text: "More tools"
@@ -67,3 +67,5 @@ export const messageRightBarButtons = [
         text: "Attach file"
     }
 ]
+
+export { shortcutButton, messageLeftBarButtons, messageRightBarButtons};
