@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TopScorer() {
+function Profile() {
     return (
         <div>
-            Top Scorer
+            Profile
         </div>
     )
 }
 
-export default TopScorer
+export default Profile

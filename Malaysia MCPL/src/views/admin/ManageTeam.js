@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TopScorer() {
+function ManageTeam() {
     return (
         <div>
-            Top Scorer
+            Team Management
         </div>
     )
 }
 
-export default TopScorer
+export default ManageTeam

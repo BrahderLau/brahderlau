@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TopScorer() {
+function MatchList() {
     return (
         <div>
-            Top Scorer
+            Match List
         </div>
     )
 }
 
-export default TopScorer
+export default MatchList

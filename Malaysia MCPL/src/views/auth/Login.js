@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { AuthConsumer } from "../../authContext.js";
+import LoginFunction from "../../components/LoginFunction.js"
 
 export default function Login() {
   return (
@@ -16,17 +18,6 @@ export default function Login() {
                 </div>
                 <div className="btn-wrapper text-center">
                   <button
-                    className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <img
-                      alt="..."
-                      className="w-5 mr-1"
-                      src={require("assets/img/github.svg")}
-                    />
-                    Github
-                  </button>
-                  <button
                     className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                     type="button"
                   >
@@ -36,6 +27,17 @@ export default function Login() {
                       src={require("assets/img/google.svg")}
                     />
                     Google
+                  </button>
+                  <button
+                    className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    <img
+                      alt="..."
+                      className="w-5 mr-1"
+                      src={require("assets/img/facebook.svg")}
+                    />
+                    Facebook
                   </button>
                 </div>
                 <hr className="mt-6 border-b-1 border-gray-400" />
@@ -86,32 +88,27 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                    <button
-                      className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      Sign In
-                    </button>
+                    <LoginFunction />
                   </div>
                 </form>
+                <div className="flex flex-wrap mt-6 relative">
+                  <div className="w-1/2">
+                    <a
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                      className="text-black"
+                    >
+                      <small>Forgot password?</small>
+                    </a>
+                  </div>
+                  <div className="w-1/2 text-right">
+                    <Link to="/auth/register" className="text-black">
+                      <small>Create new account</small>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-wrap mt-6 relative">
-              <div className="w-1/2">
-                <a
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  className="text-gray-300"
-                >
-                  <small>Forgot password?</small>
-                </a>
-              </div>
-              <div className="w-1/2 text-right">
-                <Link to="/auth/register" className="text-gray-300">
-                  <small>Create new account</small>
-                </Link>
-              </div>
-            </div>
+            </div>    
           </div>
         </div>
       </div>

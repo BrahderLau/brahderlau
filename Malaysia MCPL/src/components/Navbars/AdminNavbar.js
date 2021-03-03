@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AuthConsumer } from "../../authContext.js"
 import UserDropdown from "components/Dropdowns/UserDropdown.js";
 import styled from "styled-components";
+import Can from "../Can.js";
 
 export default function Navbar() {
   return (
@@ -24,48 +26,66 @@ export default function Navbar() {
           </form> */}
           
           <QuickNav>
-            <span className="text-white text-sm uppercase font-bold no-underline mr-4" >
-              Quick Navigation: 
-            </span>
+            {/* <span className="text-white text-sm uppercase font-bold no-underline mr-4" >
+              Navigation: 
+            </span> */}
             <Link
               className={
                 "text-xs uppercase font-bold block" +
-                (window.location.href.indexOf("/team/leaderboard") !== -1
+                (window.location.href.indexOf("/home") !== -1
                   ? "text-blue-500 hover:text-blue-600"
                   : "text-gray-800 hover:text-gray-600")
               }
-              to="/"
+              to="/home"
             >
               <span className="text-white text-sm uppercase font-bold no-underline mr-4" >
                 Home
               </span>
             </Link>
-            <Link
-              className={
-                "text-xs uppercase font-bold block " +
-                (window.location.href.indexOf("/team/leaderboard") !== -1
-                  ? "text-blue-500 hover:text-blue-600"
-                  : "text-gray-800 hover:text-gray-600")
-              }
-              to="/auth/login"
-            >
-              <span className="text-white text-sm uppercase font-bold no-underline mr-4" >
-                Login
-              </span>
-            </Link>
-            <Link
-              className={
-                "text-xs uppercase font-bold block " +
-                (window.location.href.indexOf("/team/leaderboard") !== -1
-                  ? "text-blue-500 hover:text-blue-600"
-                  : "text-gray-800 hover:text-gray-600")
-              }
-              to="/auth/register"
-            >
-              <span className="text-white text-sm uppercase font-bold no-underline" >
-                Register
-              </span>
-            </Link>
+            <AuthConsumer>
+              {({ user }) => (
+                <Can
+                role={user.role}
+                perform="loginOrRegister:auth"
+                no={() => (
+                  <AuthNav>
+                    <Link
+                      className={
+                        "text-xs uppercase font-bold block " +
+                        (window.location.href.indexOf("/auth/login") !== -1
+                          ? "text-blue-500 hover:text-blue-600"
+                          : "text-gray-800 hover:text-gray-600")
+                      }
+                      to="/auth/login"
+                    >
+                      <span className="text-white text-sm uppercase font-bold no-underline mr-4" >
+                        Login
+                      </span>
+                    </Link>
+                    <Link
+                      className={
+                        "text-xs uppercase font-bold block " +
+                        (window.location.href.indexOf("/auth/register") !== -1
+                          ? "text-blue-500 hover:text-blue-600"
+                          : "text-gray-800 hover:text-gray-600")
+                      }
+                      to="/auth/register"
+                    >
+                      <span className="text-white text-sm uppercase font-bold no-underline" >
+                        Register
+                      </span>
+                    </Link>
+                  </AuthNav>
+                )}
+                // no={() =>
+                //   <div>
+                //     {/* hide */}
+                //   </div>
+                // }
+                />
+              )}
+            </AuthConsumer>
+            
           </QuickNav>     
           {/* User */}
           <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
@@ -79,5 +99,10 @@ export default function Navbar() {
 }
 
 const QuickNav = styled.div`
+  display: flex;
+  padding-top: 6px;
+`
+
+const AuthNav = styled.div`
   display: flex;
 `

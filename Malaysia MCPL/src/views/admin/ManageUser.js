@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TopScorer() {
+function ManageUser() {
     return (
         <div>
-            Top Scorer
+            User Management
         </div>
     )
 }
 
-export default TopScorer
+export default ManageUser

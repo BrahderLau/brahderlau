@@ -35,13 +35,13 @@ export default function Index() {
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           {/* <Router> */}
             <Switch>
-              <Route path="/" exact component={Home} />
+              <Route path="/home" exact component={Home} />
               <Route path="/team/dashboard" exact component={Dashboard} />
               <Route path="/team/maps" exact component={Maps} />
               <Route path="/team/settings" exact component={Settings} />
               <Route path="/team/leaderboard" exact component={Leaderboard} />
               <Route path="/team/list" exact component={TeamList} />
-              <Redirect from="*" to="/" />
+              <Redirect to="/home" />
             </Switch>
           {/* </Router> */}
           <FooterAdmin />

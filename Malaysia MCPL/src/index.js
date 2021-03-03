@@ -8,19 +8,19 @@ import "assets/styles/tailwind.css";
 // layouts
 
 import Main from "layouts/Main.js";
-import Auth from "layouts/Auth.js";
+// import Auth from "layouts/Auth.js";
 
-// views without layouts
+// // views without layouts
 
-import Landing from "views/Landing.js";
-import Profile from "views/Profile.js";
-import Index from "views/Index.js";
+// import Landing from "views/Landing.js";
+// import Profile from "views/Profile.js";
+// import Index from "views/Index.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       {/* add routes with layouts */}
-      <Route path="/" component={Main} />
+      <Route path="/home" component={Main} />
       <Route path="/auth" component={Main} />
       <Route path="/match" component={Main} />
       <Route path="/team" component={Main} />
@@ -32,7 +32,7 @@ ReactDOM.render(
       <Route path="/profile" exact component={Profile} />
       <Route path="/" exact component={Index} /> */}
       {/* add redirect for first page */}
-      <Redirect from="*" to="/" />
+      <Redirect to="/home" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

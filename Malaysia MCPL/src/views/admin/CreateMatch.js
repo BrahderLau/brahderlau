@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TopScorer() {
+function CreateMatch() {
     return (
         <div>
-            Top Scorer
+            New Match
         </div>
     )
 }
 
-export default TopScorer
+export default CreateMatch

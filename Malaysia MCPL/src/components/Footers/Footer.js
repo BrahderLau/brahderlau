@@ -41,15 +41,17 @@ export default function Footer() {
               <div className="mt-6 lg:mb-0 mb-6">
                 <button
                   className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
+                  type="button"   
                 >
-                  <i className="fab fa-twitter"></i>
+                  <a href="https://twitter.com/MobileLegendsWW" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-twitter"></i>
+                  </a>
                 </button>
                 <button
                   className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a href="http://facebook.com/mcumlbb" target="_blank">
+                  <a href="http://facebook.com/mcumlbb" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook-square"></i>
                   </a>
                 </button>
@@ -154,17 +156,20 @@ export default function Footer() {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full px-4 mx-auto text-center">
               <div className="text-sm text-gray-600 font-semibold py-1">
-                <a className="text-gray-600 text-sm font-semibold py-1">
+                <a href="#pablo" className="text-gray-600 text-sm font-semibold py-1">
                   Organized by Magic Chess Union (MCU)
                 </a><br/>
-                Copyright © {new Date().getFullYear()} Notus React by{" "}
                 <a
-                  href="https://www.creative-tim.com?ref=nr-footer"
+                  href="https://brahderlau.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900"
                 >
-                  Creative Tim
-                </a>
-                .
+                  Web Application Developed By BrahderLau
+                </a><br/>
+                <a href="#pablo"className="text-gray-600 text-sm font-semibold py-1">
+                  Copyright © {new Date().getFullYear()} Malaysia MCPL.
+                </a><br/>
               </div>
             </div>
           </div>
