@@ -9,7 +9,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -37,7 +37,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -65,7 +65,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -93,7 +93,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -121,7 +121,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -149,7 +149,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -177,7 +177,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -205,7 +205,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -233,7 +233,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -261,7 +261,7 @@ export const teamData = [
             teamLogo: rakyat_catur_logo,
             teamValue: 1000,
             teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
+            teamFounder: "Shiro",
             teamHistory: "..."
         },
         teamMembers: [
@@ -280,146 +280,6 @@ export const teamData = [
             totalPoints: 10,
             totalIGS: 666,
             teamDivision: "Div 1"
-        }       
-    },
-    {
-        teamId: "T003",
-        teamName: "Rakyat Catur Ladies",
-        teamDetails: {
-            teamLogo: rakyat_catur_logo,
-            teamValue: 1000,
-            teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
-            teamHistory: "..."
-        },
-        teamMembers: [
-            {
-                memberId: "M001",
-                memberIGN: "BrahderLau σק",
-            }
-        ],
-        teamBattleDetails: {
-            matchCount: 6,
-            winsCount: 3,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 2,
-            currentRanking: 3,
-            totalPoints: 10,
-            totalIGS: 666,
-            teamDivision: "Div 1"
-        }       
-    },
-    {
-        teamId: "T003",
-        teamName: "Rakyat Catur Ladies",
-        teamDetails: {
-            teamLogo: rakyat_catur_logo,
-            teamValue: 1000,
-            teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
-            teamHistory: "..."
-        },
-        teamMembers: [
-            {
-                memberId: "M001",
-                memberIGN: "BrahderLau σק",
-            }
-        ],
-        teamBattleDetails: {
-            matchCount: 6,
-            winsCount: 3,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 2,
-            currentRanking: 3,
-            totalPoints: 10,
-            totalIGS: 666,
-            teamDivision: "Div 1"
-        }       
-    },
-    {
-        teamId: "T003",
-        teamName: "Rakyat Catur Ladies",
-        teamDetails: {
-            teamLogo: rakyat_catur_logo,
-            teamValue: 1000,
-            teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
-            teamHistory: "..."
-        },
-        teamMembers: [
-            {
-                memberId: "M001",
-                memberIGN: "BrahderLau σק",
-            }
-        ],
-        teamBattleDetails: {
-            matchCount: 6,
-            winsCount: 3,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 2,
-            currentRanking: 3,
-            totalPoints: 10,
-            totalIGS: 666,
-            teamDivision: "Div 1"
-        }       
-    },
-    {
-        teamId: "T003",
-        teamName: "Rakyat Catur Ladies",
-        teamDetails: {
-            teamLogo: rakyat_catur_logo,
-            teamValue: 1000,
-            teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
-            teamHistory: "..."
-        },
-        teamMembers: [
-            {
-                memberId: "M001",
-                memberIGN: "BrahderLau σק",
-            }
-        ],
-        teamBattleDetails: {
-            matchCount: 6,
-            winsCount: 3,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 2,
-            currentRanking: 3,
-            totalPoints: 10,
-            totalIGS: 666,
-            teamDivision: "Div 1"
-        }       
-    },
-    {
-        teamId: "T003",
-        teamName: "Rakyat Catur Ladies",
-        teamDetails: {
-            teamLogo: rakyat_catur_logo,
-            teamValue: 1000,
-            teamLikesCount: 1,
-            teamFounder: "Sharun Nizam",
-            teamHistory: "..."
-        },
-        teamMembers: [
-            {
-                memberId: "M001",
-                memberIGN: "BrahderLau σק",
-            }
-        ],
-        teamBattleDetails: {
-            matchCount: 6,
-            winsCount: 3,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 2,
-            currentRanking: 3,
-            totalPoints: 10,
-            totalIGS: 666,
-            teamDivision: "Div 1"
-        }       
+        }      
     }
 ]

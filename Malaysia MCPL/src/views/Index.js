@@ -6,7 +6,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Router, Switch, Route, Redirect } from "react-router-dom";
 
 // components
 
@@ -29,19 +29,21 @@ export default function Index() {
     <>
       <Sidebar />
       <div className="relative md:ml-64 bg-gray-200">
-        <AdminNavbar />
+        {/* <AdminNavbar /> */}
         {/* Header */}
-        <HeaderStats />
+        {/* <HeaderStats /> */}
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/team/dashboard" exact component={Dashboard} />
-            <Route path="/team/maps" exact component={Maps} />
-            <Route path="/team/settings" exact component={Settings} />
-            <Route path="/team/leaderboard" exact component={Leaderboard} />
-            <Route path="/team/list" exact component={List} />
-            <Redirect from="/team" to="/team/dashboard" />
-          </Switch>
+          {/* <Router> */}
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/team/dashboard" exact component={Dashboard} />
+              <Route path="/team/maps" exact component={Maps} />
+              <Route path="/team/settings" exact component={Settings} />
+              <Route path="/team/leaderboard" exact component={Leaderboard} />
+              <Route path="/team/list" exact component={List} />
+              <Redirect from="/team" to="/team/dashboard" />
+            </Switch>
+          {/* </Router> */}
           <FooterAdmin />
         </div>
       </div>

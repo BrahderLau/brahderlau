@@ -11,7 +11,7 @@ export default function Sidebar() {
   return (
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-no-wrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
-        <div className="md:flex-col md:items-stretch md:min-h-full md:flex-no-wrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+        <div className="md:flex-col md:items-stretch md:min-h-full md:flex-no-wrap px-0 flex items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
             className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
@@ -24,23 +24,23 @@ export default function Sidebar() {
           <div className="flex flex-wrap justify-center">
             <div className="w-6/12 sm:w-4/12 px-6">
               <img
-                src={require("assets/img/magic_chess_logo.png")}
+                src={require("assets/img/MCU_LOGO.png")}
                 alt="..."
-                className="w-10 h-10 rounded-full border-2 border-gray-100 shadow "
+                className="w-full rounded-full align-middle border-none shadow-lg"
                 
                 >
               </img>
             </div>
-            <span>
-                Malaysia MCPL (Beta Version)
+            <span className="text-black font-bold text-sm uppercase lg:inline-block font-semibold">
+                Malaysia MCPL (Beta)
               </span>   
           </div>
           
           {/* User */}
           <ul className="md:hidden items-center flex flex-wrap list-none">
-            <li className="inline-block relative">
+            {/* <li className="inline-block relative">
               <NotificationDropdown />
-            </li>
+            </li> */}
             <li className="inline-block relative">
               <UserDropdown />
             </li>
@@ -60,9 +60,10 @@ export default function Sidebar() {
                     className="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0"
                     to="/"
                   >
-                    Malaysia MCPL (Beta Version)
+                    Malaysia MCPL (Beta)
                   </Link>
                 </div>
+                
                 <div className="w-6/12 flex justify-end">
                   <button
                     type="button"
@@ -75,7 +76,7 @@ export default function Sidebar() {
               </div>
             </div>
             {/* Form */}
-            <form className="mt-6 mb-4 md:hidden">
+            {/* <form className="mt-6 mb-4 md:hidden">
               <div className="mb-3 pt-0">
                 <input
                   type="text"
@@ -83,7 +84,48 @@ export default function Sidebar() {
                   className="px-3 py-2 h-12 border border-solid  border-gray-600 placeholder-gray-400 text-gray-700 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
                 />
               </div>
-            </form>
+            </form> */}
+
+            {/* Divider */}
+            {/* <hr className="my-4 md:min-w-full" /> */}
+
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/leaderboard") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/"
+                >
+                  <i
+                    className={
+                      "fas fa-trophy mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/leaderboard") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Home
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/list") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/"
+                >
+                  🔴 Live Match            
+                </Link>
+              </li>
+            </ul>
 
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
@@ -116,7 +158,7 @@ export default function Sidebar() {
                 </Link>
               </li> */}
 
-              <li className="items-center">
+              {/* <li className="items-center">
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
@@ -136,7 +178,7 @@ export default function Sidebar() {
                   ></i>{" "}
                   Settings
                 </Link>
-              </li>
+              </li> */}
 
               <li className="items-center">
                 <Link
@@ -153,7 +195,7 @@ export default function Sidebar() {
                       "fas fa-trophy mr-2 text-sm " +
                       (window.location.href.indexOf("/team/leaderboard") !== -1
                         ? "opacity-75"
-                        : "text-gray-400")
+                        : "text-gray-500")
                     }
                   ></i>{" "}
                   Leaderboard
@@ -175,7 +217,7 @@ export default function Sidebar() {
                       "fas fa-users mr-2 text-sm " +
                       (window.location.href.indexOf("/team/list") !== -1
                         ? "opacity-75"
-                        : "text-gray-400")
+                        : "text-gray-500")
                     }
                   ></i>{" "}
                   Team List
@@ -209,7 +251,61 @@ export default function Sidebar() {
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
             <h6 className="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-              Auth Layout Pages
+              Player
+            </h6>
+            {/* Navigation */}
+
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/leaderboard") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/leaderboard"
+                >
+                  <i
+                    className={
+                      "fas fa-trophy mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/leaderboard") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Leaderboard
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/list") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/list"
+                >
+                  <i
+                    className={
+                      "fas fa-user mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/list") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Player List
+                </Link>
+              </li>
+            </ul>
+
+            {/* Divider */}
+            <hr className="my-4 md:min-w-full" />
+            {/* Heading */}
+            <h6 className="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+              User
             </h6>
             {/* Navigation */}
 
@@ -229,12 +325,56 @@ export default function Sidebar() {
                   className="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
                   to="/auth/register"
                 >
-                  <i className="fas fa-clipboard-list text-gray-400 mr-2 text-sm"></i>{" "}
+                  <i className="fas fa-clipboard-list text-gray-500 mr-2 text-sm"></i>{" "}
                   Register
                 </Link>
               </li>
-            </ul>
 
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/settings") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/settings"
+                >
+                  <i
+                    className={
+                      "fas fa-user-edit mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/settings") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Profile
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/settings") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/settings"
+                >
+                  <i
+                    className={
+                      "fab fa-teamspeak mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/settings") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Team Details
+                </Link>
+              </li>
+            </ul>
+              
             {/* Divider */}
             {/* <hr className="my-4 md:min-w-full" /> */}
             {/* Heading */}
@@ -361,6 +501,104 @@ export default function Sidebar() {
                 </a>
               </li>
             </ul> */}
+
+            {/* Divider */}
+            <hr className="my-4 md:min-w-full" />
+            {/* Heading */}
+            <h6 className="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+              Admin
+            </h6>
+            {/* Navigation */}
+
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/leaderboard") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/leaderboard"
+                >
+                  <i
+                    className={
+                      "fas fa-chess mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/leaderboard") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  New Match
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/list") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/list"
+                >
+                  <i
+                    className={
+                      "fas fa-chess mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/list") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Match List
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/list") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/list"
+                >
+                  <i
+                    className={
+                      "fas fa-users-cog mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/list") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Manage User
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/team/list") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/team/list"
+                >
+                  <i
+                    className={
+                      "fas fa-user mr-2 text-sm " +
+                      (window.location.href.indexOf("/team/list") !== -1
+                        ? "opacity-75"
+                        : "text-gray-500")
+                    }
+                  ></i>{" "}
+                  Manage Team
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

@@ -7,7 +7,6 @@ import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import HeaderStats from "components/Headers/HeaderStats.js";
 import FooterAdmin from "components/Footers/FooterAdmin.js";
-
 // views
 
 import Dashboard from "views/team/Dashboard.js";
@@ -15,10 +14,11 @@ import Maps from "views/team/Maps.js";
 import Settings from "views/team/Settings.js";
 import Leaderboard from "views/team/Leaderboard.js";
 import List from "views/team/List.js";
+import FooterSmall from "components/Footers/FooterSmall.js";
 
 export default function Main() {
   return (
-    <>
+    <div>
       <Sidebar />
       <div className="relative md:ml-64 bg-gray-200">
         <AdminNavbar />
@@ -33,9 +33,9 @@ export default function Main() {
             <Route path="/team/list" exact component={List} />
             <Redirect from="/team" to="/team/dashboard" />
           </Switch>
-          <FooterAdmin />
+          <FooterSmall/>
         </div>
       </div>
-    </>
+    </div>
   );
 }

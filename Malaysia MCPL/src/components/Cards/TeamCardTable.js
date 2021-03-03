@@ -98,7 +98,7 @@ export default function TeamCardTable({ color }) {
               {team.teamDetails["teamValue"]}
             </td>
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-              {team.teamDetails["teamLikesCount"]}
+              {team.teamBattleDetails["teamDivision"]}
             </td>
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
               <TableDropdown />
@@ -183,7 +183,7 @@ export default function TeamCardTable({ color }) {
                       : "bg-blue-800 text-blue-300 border-blue-700")
                   }
                 >
-                  Team Likes Count
+                  Division
                 </th>
                 <th
                   className={
