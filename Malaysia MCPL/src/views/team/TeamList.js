@@ -4,7 +4,7 @@ import React from "react";
 
 import TeamCardTable from "components/Cards/TeamCardTable.js";
 
-export default function List() {
+export default function TeamList() {
   return (
     <>
       <div className="flex flex-wrap mt-4">
