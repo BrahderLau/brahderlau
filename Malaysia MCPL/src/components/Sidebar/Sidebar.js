@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
+import AdminNavbar from "components/Navbars/AdminNavbar.js";
 
 //import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
 import UserDropdown from "components/Dropdowns/UserDropdown.js";
@@ -21,7 +22,10 @@ export default function Sidebar() {
             <i className="fas fa-bars"></i>
           </button>
           {/* Brand */}
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center md:flex-row">
+            <span className="text-black font-bold text-base uppercase lg:inline-block font-semibold pb-4">
+                Malaysia MCPL (Beta)
+            </span> 
             <div className="w-6/12 sm:w-4/12 px-6">
               <img
                 src={require("assets/img/MCU_LOGO.png")}
@@ -31,25 +35,21 @@ export default function Sidebar() {
                 >
               </img>
             </div>
-            <span className="text-black font-bold text-sm uppercase lg:inline-block font-semibold">
-                Malaysia MCPL (Beta)
-              </span>   
+              
           </div>
-          
           {/* User */}
-          <ul className="md:hidden items-center flex flex-wrap list-none">
-            {/* <li className="inline-block relative">
-              <NotificationDropdown />
-            </li> */}
-            <li className="inline-block relative">
+          {/* <ul className="md:hidden items-center flex flex-wrap list-none">
+            <li className= {
+              "inline-block relative"
+            }>
               <UserDropdown />
             </li>
-          </ul>
+          </ul> */}
           {/* Collapse */}
           <div
             className={
               "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +
-              collapseShow
+              collapseShow              
             }
           >
             {/* Collapse header */}
@@ -88,7 +88,7 @@ export default function Sidebar() {
               Welcome Back, User!
             </span>
 
-            {/* <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
                 <Link
                   className={
@@ -154,7 +154,7 @@ export default function Sidebar() {
                   Register
                 </Link>
               </li>
-            </ul> */}
+            </ul> 
               {/* <li className="items-center">
                 <Link
                   className="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
@@ -177,6 +177,7 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/match/live") !== -1
@@ -191,6 +192,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/match/schedule") !== -1
@@ -267,6 +269,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/team/leaderboard") !== -1
@@ -289,6 +292,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/team/team-list") !== -1
@@ -343,6 +347,7 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/player/top-scorer") !== -1
@@ -365,6 +370,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/player/player-list") !== -1
@@ -398,6 +404,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/user/profile") !== -1
@@ -420,6 +427,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/user/myteam") !== -1
@@ -579,6 +587,7 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/admin/create-match") !== -1
@@ -601,6 +610,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/admin/match-list") !== -1
@@ -623,6 +633,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/admin/manage-user") !== -1
@@ -645,6 +656,7 @@ export default function Sidebar() {
 
               <li className="items-center">
                 <Link
+                  onClick={() => setCollapseShow("hidden")}
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/admin/manage-team") !== -1

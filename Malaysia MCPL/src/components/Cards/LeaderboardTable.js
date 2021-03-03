@@ -6,26 +6,16 @@ import _ from 'lodash';
 
 //import TableDropdown from "components/Dropdowns/TableDropdown.js";
 import {teamData} from "data/Team.js"
-export default function CardTable({ color }) {
+export default function LeaderboardTable({ color }) {
 
   const checkRankChanges = (previous, current) => {
-    const result = isEqual(previous, current);
-    let sign;
-    if(result === "") {
-      sign = '◀️';
-    }
-    else{
-      _.gt(previous, current) ? sign = '🔼' : sign = '🔽'
-    }
-    return sign;
-  }
-
-  const greenOrRed = (previous, current) => {
-    return _.lt(previous, current) ? "ml-3 text-red-500" : "ml-3 text-green-500"
-  }
-
-  const isEqual = (previous, current) => {
-    return _.isEqual(previous,current) ? "=" : previous
+    let rankChangeStatus = _.isEqual(previous,current) 
+    ? "same"
+    :  _.gt(previous, current) 
+    ? "increase" 
+    : "decrease"
+    
+    return rankChangeStatus;
   }
 
   const calcRankDiff = (previous, current) => {
@@ -40,15 +30,19 @@ export default function CardTable({ color }) {
       }
     }
     else {
-      result = " =";
+      result = " ";
     }
     return result
+  }
+
+  const sortByRank = (team) => {
+    return _.sortBy(team, [function(data) { return data.teamBattleDetails["currentRanking"]}]);
   }
 
   const teamJsx = () => {
     return <tbody>
       {
-        teamData.map(function(team, index) {
+        sortByRank(teamData).map(function(team, index) {
           return( <tr key={index}>
             <th className="border-t-0 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left">
               <span
@@ -61,15 +55,11 @@ export default function CardTable({ color }) {
               </span> 
               <span
                 className={
-                  "ml-3 " +
-                  +(color === "light" ? "text-gray-700" : "text-white")
-                }
-              >
-                {checkRankChanges(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"])}
-              </span>
-              <span
-                className={
-                  greenOrRed(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"])
+                    checkRankChanges(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"]) === "same"
+                    ? "ml-3 fas fa-equals text-blue-500 mr-4"
+                    : checkRankChanges(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"]) === "increase"
+                    ? "ml-3 fas fa-arrow-up text-green-500 mr-4"
+                    : "ml-3 fas fa-arrow-down text-orange-500 mr-4"
                 }
               >
                 {calcRankDiff(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"])}
@@ -527,11 +517,11 @@ export default function CardTable({ color }) {
   );
 }
 
-CardTable.defaultProps = {
+LeaderboardTable.defaultProps = {
   color: "light",
 };
 
-CardTable.propTypes = {
+LeaderboardTable.propTypes = {
   color: PropTypes.oneOf(["light", "dark"]),
 };
 

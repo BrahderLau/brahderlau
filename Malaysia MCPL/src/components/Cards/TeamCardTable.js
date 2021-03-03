@@ -1,54 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 //import styled from 'styled-components';
-// import _ from 'lodash';
+import _ from 'lodash';
 // components
 
 import TableDropdown from "components/Dropdowns/TableDropdown.js";
 import {teamData} from "data/Team.js"
 export default function TeamCardTable({ color }) {
 
-  // const checkRankChanges = (previous, current) => {
-  //   const result = isEqual(previous, current);
-  //   let sign;
-  //   if(result === "") {
-  //     sign = '◀️';
-  //   }
-  //   else{
-  //     _.gt(previous, current) ? sign = '🔼' : sign = '🔽'
-  //   }
-  //   return sign;
-  // }
-
-  // const greenOrRed = (previous, current) => {
-  //   return _.lt(previous, current) ? "ml-3 text-red-500" : "ml-3 text-green-500"
-  // }
-
-  // const isEqual = (previous, current) => {
-  //   return _.isEqual(previous,current) ? "=" : previous
-  // }
-
-  // const calcRankDiff = (previous, current) => {
-  //   let result = _.subtract(previous, current)
-  //   if (result !== 0) {
-  //     if (result > 0) {
-  //       result = '+' + result;
-  //     } 
-  //     else {
-  //       let newResult = _.padStart(result, 3, ' ');
-  //       result = newResult;
-  //     }
-  //   }
-  //   else {
-  //     result = "";
-  //   }
-  //   return result
-  // }
+  const sortByName = (team) => {
+    return _.sortBy(team, [function(data) { return data.teamName}]);
+  }
 
   const teamJsx = () => {
     return <tbody>
       {
-        teamData.map(function(team, index) {
+        sortByName(teamData).map(function(team, index) {
           return( <tr key={index}>
 
             <td className="border-t-0 px-5 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">

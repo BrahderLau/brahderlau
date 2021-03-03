@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 // components
 
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
+//import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import HeaderStats from "components/Headers/HeaderStats.js";
 import Footer from "components/Footers/Footer.js"
@@ -37,11 +37,11 @@ export default function Main() {
   return (
     <div>
       <Sidebar />
-      <div className="relative md:ml-64 bg-gray-200">
-        <AdminNavbar />
+      <div className="relative md:ml-64 bg-gray-700">
+        
         {/* Header */}
         <HeaderStats />
-        <div className="px-4 py-4 md:px-10 mx-auto w-full -m-24">
+        <div className="px-4 py-4 md:px-10 mx-auto w-full -m-24 bg-yellow-200 ">
           <Switch>
             <Route path="/home" exact component={Home} />
             <Route path="/auth/login" exact component={Login} />

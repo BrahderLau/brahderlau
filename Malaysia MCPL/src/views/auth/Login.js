@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
-import { AuthConsumer } from "../../authContext.js";
+import { Link } from "react-router-dom";
+//import { AuthConsumer } from "../../authContext.js";
 import LoginFunction from "../../components/LoginFunction.js"
 
 export default function Login() {
