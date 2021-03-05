@@ -7,8 +7,14 @@ import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import UserDropdown from "components/Dropdowns/UserDropdown.js";
 import styled from 'styled-components'
 
-export default function Sidebar() {
+export default function Sidebar({user}) {
+
   const [collapseShow, setCollapseShow] = React.useState("hidden");
+  
+  // if(user) {
+  //   console.log(user);
+  // }
+  
   return (
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-no-wrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
@@ -28,10 +34,9 @@ export default function Sidebar() {
             </span> 
             <div className="w-6/12 sm:w-4/12 px-6">
               <img
-                src={require("assets/img/MCU_LOGO.png")}
+                src={user && user.profilePicture ? user.profilePicture : "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898-450x450.png"}
                 alt="..."
-                className="w-full rounded-full align-middle border-none shadow-lg"
-                
+                className="w-full rounded-full align-middle border-none shadow-md"
                 >
               </img>
             </div>
@@ -85,7 +90,7 @@ export default function Sidebar() {
             {/* <hr className="my-4 md:min-w-full" /> */}
             
             <span className="md:block text-center md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-xs font-bold p-4 px-0">
-              Welcome Back, User!
+              {user && user.displayName ? `Welcome Back, ${user.displayName}!` : "Welcome, Guest!"}
             </span>
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">

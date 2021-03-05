@@ -2379,6 +2379,10 @@ video {
   width: 25%;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2880,7 +2884,7 @@ video {
 
 .img-slider {
     position: relative;
-    padding-bottom: 57%;
+    padding-bottom: 56%;
     overflow: hidden;
 }
 .img-slider .slider-container {
@@ -2910,3 +2914,12 @@ video {
     
     60%, 85%{left: -200%}
 }
+.error {
+    border: 2px solid #FF6565;
+  }
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */

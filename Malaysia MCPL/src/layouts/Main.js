@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 // components
@@ -34,9 +34,12 @@ import ManageUser from "views/admin/ManageUser.js"
 import ManageTeam from "views/admin/ManageTeam.js"
 
 export default function Main() {
+
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')))
+
   return (
     <div>
-      <Sidebar />
+      <Sidebar user={user}/>
       <div className="relative md:ml-64 bg-gray-700">
         
         {/* Header */}
@@ -45,7 +48,7 @@ export default function Main() {
           <Switch>
             <Route path="/home" exact component={Home} />
             <Route path="/auth/login" exact component={Login} />
-            <Route path="/auth/register" exact component={Register} />
+            <Route path="/auth/register" exact render={() => <Register setUser={setUser} />} />
             <Route path="/match/live" exact component={LiveMatch} />
             <Route path="/match/schedule" exact component={Schedule} />
             <Route path="/team/leaderboard" exact component={Leaderboard} />

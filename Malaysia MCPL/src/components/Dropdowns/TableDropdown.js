@@ -42,7 +42,7 @@ const NotificationDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Action
+          Like
         </a>
         <a
           href="#pablo"
@@ -51,9 +51,9 @@ const NotificationDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Another action
+          View Team Details
         </a>
-        <a
+        {/* <a
           href="#pablo"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
@@ -61,7 +61,7 @@ const NotificationDropdown = () => {
           onClick={(e) => e.preventDefault()}
         >
           Something else here
-        </a>
+        </a> */}
       </div>
     </>
   );

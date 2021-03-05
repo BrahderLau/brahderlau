@@ -24,14 +24,13 @@ export default function LeaderboardTable({ color }) {
       if (result > 0) {
         result = '+' + result;
       } 
-      else {
-        let newResult = _.padStart(result, 3, ' ');
-        result = newResult;
-      }
+      
     }
     else {
       result = " ";
     }
+
+    result = _.padStart(result, 3, ' ');
     return result
   }
 
@@ -64,6 +63,13 @@ export default function LeaderboardTable({ color }) {
               >
                 {calcRankDiff(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"])}
               </span>
+              <i 
+                className = {
+                  team.teamBattleDetails["currentRanking"] === 1
+                  ? "ml-3 fas fa-crown text-orange-500"
+                  : "ml-3"
+                }
+                   /> 
             </th>
             
             <td className="border-t-0 px-5 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
@@ -150,7 +156,7 @@ export default function LeaderboardTable({ color }) {
                   (color === "light" ? "text-gray-800" : "text-white")
                 }
               >
-                Leaderboard
+                Leaderboard  (Last Updated: 4 March 2021)
               </h3>
             </div>
           </div>

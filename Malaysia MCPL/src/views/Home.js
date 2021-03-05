@@ -15,20 +15,20 @@ export default function Home() {
                             <img
                                 alt="..."
                                 //src={require("assets/img/home_bg_compressed.jpg")}
-                                src={require("assets/img/home_bg_compressed.png")} 
+                                src={require("assets/img/home_bg_compressed_resized.png")} 
                             />   
                         </div>
                         <div className = "slide">
                             <img
                                 alt="..."
-                                src={require("assets/img/SCHEDULE_01.png")}
+                                src={require("assets/img/SCHEDULE_WEEK2_1.jpg")}
                                 //src={require("assets/img/home_bg_compressed.png")} 
                             />   
                         </div>
                         <div className = "slide">
                             <img
                                 alt="..."
-                                src={require("assets/img/SCHEDULE_02.png")}
+                                src={require("assets/img/SCHEDULE_WEEK2_2.jpg")}
                                 //src={require("assets/img/home_bg_compressed.png")} 
                             />   
                         </div>                
