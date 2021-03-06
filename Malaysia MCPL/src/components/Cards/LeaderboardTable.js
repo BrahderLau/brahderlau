@@ -42,7 +42,8 @@ export default function LeaderboardTable({ color }) {
     return <tbody>
       {
         sortByRank(teamData).map(function(team, index) {
-          return( <tr key={index}>
+          return( 
+          <tr className="border-b" key={index}>
             <th className="border-t-0 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left">
               <span
                 className={
@@ -57,8 +58,8 @@ export default function LeaderboardTable({ color }) {
                     checkRankChanges(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"]) === "same"
                     ? "ml-3 fas fa-equals text-blue-500 mr-4"
                     : checkRankChanges(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"]) === "increase"
-                    ? "ml-3 fas fa-arrow-up text-green-500 mr-4"
-                    : "ml-3 fas fa-arrow-down text-orange-500 mr-4"
+                      ? "ml-3 fas fa-arrow-up text-green-500 mr-4"
+                      : "ml-3 fas fa-arrow-down text-orange-500 mr-4"
                 }
               >
                 {calcRankDiff(team.teamBattleDetails["previousRanking"], team.teamBattleDetails["currentRanking"])}
@@ -72,28 +73,51 @@ export default function LeaderboardTable({ color }) {
                    /> 
             </th>
             
-            <td className="border-t-0 px-5 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-              <img
-                src={team.teamDetails["teamLogo"]}
-                className="h-12 w-12 bg-white rounded-full border"
-                alt="team logo"
-              ></img>{" "}
-              <span
-                className={
-                  "ml-3 font-bold " +
-                  +(color === "light" ? "text-gray-700" : "text-white")
-                }
-              >
-                {team.teamName}
-              </span>
+            <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+              <div className="flex items-center text-center">
+                <img
+                  src={team.teamDetails["teamLogo"]}
+                  className="h-12 w-12 bg-white rounded-full border"
+                  alt="team logo"
+                ></img>{" "}
+                <span
+                  className={
+                    "pl-4 font-bold " +
+                    +(color === "light" ? "text-gray-700" : "text-white")
+                  }
+                >
+                  {team.teamName}
+                </span>
+              </div>
             </td>
-
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
               <div className="flex">
                 <img
                   src={require("assets/img/team-1-800x800.jpg")}
                   alt="..."
-                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow"
+                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow "
+                ></img>
+                <img
+                  src={require("assets/img/team-2-800x800.jpg")}
+                  alt="..."
+                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
+                ></img>
+                <img
+                  src={require("assets/img/team-3-800x800.jpg")}
+                  alt="..."
+                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
+                ></img>
+                <img
+                  src={require("assets/img/team-4-470x470.png")}
+                  alt="..."
+                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
+                ></img>
+              </div>
+              <div className="flex">
+                <img
+                  src={require("assets/img/team-1-800x800.jpg")}
+                  alt="..."
+                  className="w-10 h-10 rounded-full border-2 border-gray-100 shadow "
                 ></img>
                 <img
                   src={require("assets/img/team-2-800x800.jpg")}
@@ -132,9 +156,9 @@ export default function LeaderboardTable({ color }) {
             </td>
             {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
               <TableDropdown />
-            </td> */}
+            </td> */}      
           </tr>
-          )
+          )  
         })}
     </tbody>
   }

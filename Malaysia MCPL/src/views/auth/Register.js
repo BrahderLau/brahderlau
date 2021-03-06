@@ -79,27 +79,29 @@ export default function Register(props) {
           firstName: userData.firstName,
           lastName: userData.lastName,
           fullName: userData.fullName,
+          displayName: userData.displayName,
           email: userData.email,
           gender: userData.gender,
           DOB: userData.DOB,
           role: "user"   
         }).then(()=>{
-        const newUser = {
-          displayName: userData.displayName,
-          role: userData.role
-        }
-        //save in a state
-        props.setUser(newUser);
-        //save in a local storage ; cookies is used for communication between backend and frontend in the server
-        localStorage.setItem('user', JSON.stringify(newUser));
-        swal({
-          title: "Successful",
-          text: "Account created successful!",
-          icon: "success",
-        })
-        .then(()=>{
-          history.push(`/home`)
-        })
+          const newUser = {
+            displayName: userData.displayName,
+            role: userData.role
+          }
+          //save in a state
+          props.setUser(newUser);
+          //save in a local storage ; cookies is used for communication between backend and frontend in the server
+          localStorage.setItem('user', JSON.stringify(newUser));
+
+          swal({
+            title: "Successful",
+            text: "Account created successful!",
+            icon: "success",
+          })
+          .then(()=>{
+            history.push(`/home`)
+          })
       })
     })
     .catch((error) => {
@@ -122,14 +124,15 @@ export default function Register(props) {
     if (provider === "facebook") {
       auth.signInWithPopup(facebookProvider).then(async (result) => {
         let userInfo = result.additionalUserInfo;
-
         if (userInfo.isNewUser === true) {
           const { email, name, first_name, last_name, gender, birthday, picture} = userInfo.profile;
           await db.collection('user')
           .add({
+            uid: auth.currentUser.uid,
             firstName: first_name,
             lastName: last_name,
             fullName: name,
+            displayName: first_name,
             email: email,
             gender: gender,
             DOB: birthday,
@@ -171,30 +174,39 @@ export default function Register(props) {
           });
         }
         else {
-          const existingUser = {
-            displayName: userInfo.profile.first_name,
-            profilePicture: userInfo.profile.picture.data.url,
-            role: "user"
-          }
-          //save in a state
-          props.setUser(existingUser);
-          //save in a local storage ; cookies is used for communication between backend and frontend in the server
-          localStorage.setItem('user', JSON.stringify(existingUser));
-          swal({
-            title: "Successful",
-            text: "Login Successful!",
-            icon: "success",
+          await db.collection('user')
+          .where("uid", "==", auth.currentUser.uid)
+          .get()
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                // doc.data() is never undefined for query doc snapshots
+              const {displayName, profilePicture, role} = doc.data();
+              const existingUser = {
+                displayName: displayName,
+                profilePicture: profilePicture,
+                role: role
+              }
+              //save in a state
+              props.setUser(existingUser);
+              //save in a local storage ; cookies is used for communication between backend and frontend in the server
+              localStorage.setItem('user', JSON.stringify(existingUser));
+              swal({
+                title: "Successful",
+                text: "Account Login Successful!",
+                icon: "success",
+              })
+              .then(()=>{
+                history.push(`/home`)
+              })
+              .catch((error) => {
+                swal({
+                  title: error.code,
+                  text: error.message,
+                  icon: "error",
+                })
+              });
+            });
           })
-          .then(()=>{
-            history.push(`/home`)
-          })
-          .catch((error) => {
-            swal({
-              title: error.code,
-              text: error.message,
-              icon: "error",
-            })
-          });
         }
         
       })
@@ -208,28 +220,30 @@ export default function Register(props) {
     }
     else {
       auth.signInWithPopup(googleProvider).then(async (result) => {
-        // TO DO: GET BIRTHDAY AND GENDER FROM PEOPLE API
-        //var token = result.credential.accessToken;
-        //var userInfo = result.user;
-        // console.log(userInfo)
-        // var API = "350263329449-hjed93bupvlminta23i0efcgi4a2ovk9.apps.googleusercontent.com";
-        // const response = await axios({
-        //   method: 'GET',
-        //   headers: {
-        //     Authorization: `Bearer ${token}`,
-        //   },
-        //   url: `https://people.googleapis.com/v1/people/${userInfo.uid}?personFields=genders`,
-        // })
-        // .then(()=>{
-        //   console.log(response); // You should have the info here
-        // })
-        // .catch((error)=>{
-        //   swal({
-        //     title: error.code,
-        //     text: error.message,
-        //     icon: "error",
-        //   })
-        // })
+        // {
+        //   // TO DO: GET BIRTHDAY AND GENDER FROM PEOPLE API
+        //   //var token = result.credential.accessToken;
+        //   //var userInfo = result.user;
+        //   // console.log(userInfo)
+        //   // var API = "350263329449-hjed93bupvlminta23i0efcgi4a2ovk9.apps.googleusercontent.com";
+        //   // const response = await axios({
+        //   //   method: 'GET',
+        //   //   headers: {
+        //   //     Authorization: `Bearer ${token}`,
+        //   //   },
+        //   //   url: `https://people.googleapis.com/v1/people/${userInfo.uid}?personFields=genders`,
+        //   // })
+        //   // .then(()=>{
+        //   //   console.log(response); // You should have the info here
+        //   // })
+        //   // .catch((error)=>{
+        //   //   swal({
+        //   //     title: error.code,
+        //   //     text: error.message,
+        //   //     icon: "error",
+        //   //   })
+        //   // })
+        // }
         let userInfo = result.additionalUserInfo;
         if (userInfo.isNewUser === true) {
           const { email, name, family_name, given_name, picture} = userInfo.profile;
@@ -238,6 +252,7 @@ export default function Register(props) {
             firstName: given_name,
             lastName: family_name,
             fullName: name,
+            displayName: given_name,
             email: email,
             profilePicture: picture,
             role: "user"        
@@ -277,29 +292,38 @@ export default function Register(props) {
           });
         }
         else {
-          const existingUser = {
-            displayName: userInfo.profile.first_name,
-            profilePicture: userInfo.profile.picture.data.url,
-            role: "user"
-          }
-          //save in a state
-          props.setUser(existingUser);
-          //save in a local storage ; cookies is used for communication between backend and frontend in the server
-          localStorage.setItem('user', JSON.stringify(existingUser));
-          swal({
-            title: "Successful",
-            text: "Login Successful!",
-            icon: "success",
-          })
-          .then(()=>{
-            history.push(`/home`)
-          })
-          .catch((error) => {
-            swal({
-              title: error.code,
-              text: error.message,
-              icon: "error",
-            })
+          await db.collection('user')
+            .where("uid", "==", auth.currentUser.uid)
+            .get()
+            .then((querySnapshot) => {
+              querySnapshot.forEach((doc) => {
+                  // doc.data() is never undefined for query doc snapshots
+                const {displayName, profilePicture, role} = doc.data();
+                const existingUser = {
+                  displayName: displayName,
+                  profilePicture: profilePicture,
+                  role: role
+                }
+                //save in a state
+                props.setUser(existingUser);
+                //save in a local storage ; cookies is used for communication between backend and frontend in the server
+                localStorage.setItem('user', JSON.stringify(existingUser));
+                swal({
+                  title: "Successful",
+                  text: "Account Login Successful!",
+                  icon: "success",
+                })
+                .then(()=>{
+                  history.push(`/home`)
+                })
+                .catch((error) => {
+                  swal({
+                    title: error.code,
+                    text: error.message,
+                    icon: "error",
+                  })
+                });
+            });
           });
         } 
       })

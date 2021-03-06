@@ -1,21 +1,45 @@
 /*eslint-disable*/
-import React from "react";
-import { Link } from "react-router-dom";
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
+import React, {useEffect, useState} from "react"
+import { Link } from "react-router-dom"
+import {auth} from "../../../src/firebase.js";
+// import { AuthConsumer } from "../../authContext.js"
+// import Can from "../Can.js"
+import styled from 'styled-components'
+//import AdminNavbar from "components/Navbars/AdminNavbar.js";
+
 
 //import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
-import UserDropdown from "components/Dropdowns/UserDropdown.js";
-import styled from 'styled-components'
+//import UserDropdown from "components/Dropdowns/UserDropdown.js";
 
-export default function Sidebar({user}) {
 
-  const [collapseShow, setCollapseShow] = React.useState("hidden");
-  
-  // if(user) {
-  //   console.log(user);
-  // }
-  
-  return (
+export default function Sidebar({user, setUser}) {
+
+  const [collapseShow, setCollapseShow] = useState("hidden");
+
+  const logOut = () => { 
+
+    auth.signOut().then(()=>{
+      swal({
+        title: "Are you sure?",
+        text: "Are you sure you want to log out?",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willLogOut) => {
+        if (willLogOut) {
+          swal("Account Logged Out Successful!", {
+            icon: "success",
+          });
+          setUser(null);
+          localStorage.removeItem('user');
+          setCollapseShow("hidden");
+        }
+      });
+    })
+  }
+
+  return(
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-no-wrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-no-wrap px-0 flex items-center justify-between w-full mx-auto">
@@ -90,7 +114,9 @@ export default function Sidebar({user}) {
             {/* <hr className="my-4 md:min-w-full" /> */}
             
             <span className="md:block text-center md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-xs font-bold p-4 px-0">
-              {user && user.displayName ? `Welcome Back, ${user.displayName}!` : "Welcome, Guest!"}
+              {user && user.displayName 
+              ? `Welcome Back, ${user.displayName}!` 
+              : "Welcome, Guest!"}
             </span>
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
@@ -116,52 +142,83 @@ export default function Sidebar({user}) {
                   Home
                 </Link>
               </li>
+              {
+                user 
+                ?    
+                <>
+                  <li className="items-center">
+                      <Link
+                        onClick={logOut}
+                        className={
+                          "text-xs uppercase py-3 font-bold block " +
+                          (window.location.href.indexOf("/logout") !== -1
+                            ? "text-blue-500 hover:text-blue-600"
+                            : "text-gray-800 hover:text-gray-600")
+                        }
+                        to="/logout"
+                      >
+                        <i
+                          className={
+                            "fas fa-sign-out-alt mr-2 text-sm " +
+                            (window.location.href.indexOf("/logout") !== -1
+                              ? "opacity-75"
+                              : "text-gray-500")
+                          }
+                        ></i>{" "}
+                        Log Out
+                      </Link>
+                    </li>
+                  </>
+                : 
+                <>
+                  <li className="items-center">
+                    <Link
+                      onClick={() => setCollapseShow("hidden")}
+                      className={
+                        "text-xs uppercase py-3 font-bold block " +
+                        (window.location.href.indexOf("/auth/login") !== -1
+                          ? "text-blue-500 hover:text-blue-600"
+                          : "text-gray-800 hover:text-gray-600")
+                      }
+                      to="/auth/login"
+                    >
+                      <i
+                        className={
+                          "fas fa-fingerprint mr-2 text-sm " +
+                          (window.location.href.indexOf("/auth/login") !== -1
+                            ? "opacity-75"
+                            : "text-gray-500")
+                        }
+                      ></i>{" "}
+                      Login
+                    </Link>
+                  </li>
 
-              <li className="items-center">
-                <Link
-                  onClick={() => setCollapseShow("hidden")}
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/auth/login") !== -1
-                      ? "text-blue-500 hover:text-blue-600"
-                      : "text-gray-800 hover:text-gray-600")
-                  }
-                  to="/auth/login"
-                >
-                  <i
-                    className={
-                      "fas fa-fingerprint mr-2 text-sm " +
-                      (window.location.href.indexOf("/auth/login") !== -1
-                        ? "opacity-75"
-                        : "text-gray-500")
-                    }
-                  ></i>{" "}
-                  Login
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link
-                  onClick={() => setCollapseShow("hidden")}
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/auth/register") !== -1
-                      ? "text-blue-500 hover:text-blue-600"
-                      : "text-gray-800 hover:text-gray-600")
-                  }
-                  to="/auth/register"
-                >
-                  <i
-                    className={
-                      "fas fa-clipboard mr-2 text-sm " +
-                      (window.location.href.indexOf("/auth/register") !== -1
-                        ? "opacity-75"
-                        : "text-gray-500")
-                    }
-                  ></i>{" "}
-                  Register
-                </Link>
-              </li>
+                  <li className="items-center">
+                    <Link
+                      onClick={() => setCollapseShow("hidden")}
+                      className={
+                        "text-xs uppercase py-3 font-bold block " +
+                        (window.location.href.indexOf("/auth/register") !== -1
+                          ? "text-blue-500 hover:text-blue-600"
+                          : "text-gray-800 hover:text-gray-600")
+                      }
+                      to="/auth/register"
+                    >
+                      <i
+                        className={
+                          "fas fa-clipboard mr-2 text-sm " +
+                          (window.location.href.indexOf("/auth/register") !== -1
+                            ? "opacity-75"
+                            : "text-gray-500")
+                        }
+                      ></i>{" "}
+                      Register
+                    </Link>
+                  </li>
+                </>
+              }
+              
             </ul> 
               {/* <li className="items-center">
                 <Link
@@ -606,7 +663,7 @@ export default function Sidebar({user}) {
                 >
                   <i
                     className={
-                      "fas fa-chess mr-2 text-sm " +
+                      "fas fa-chess mr-2 text-sm" +
                       (window.location.href.indexOf("/admin/create-match") !== -1
                         ? "opacity-75"
                         : "text-gray-500")

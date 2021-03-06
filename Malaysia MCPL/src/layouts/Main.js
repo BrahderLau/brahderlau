@@ -39,7 +39,7 @@ export default function Main() {
 
   return (
     <div>
-      <Sidebar user={user}/>
+      <Sidebar user={user} setUser={setUser}/>
       <div className="relative md:ml-64 bg-gray-700">
         
         {/* Header */}
@@ -47,7 +47,7 @@ export default function Main() {
         <div className="px-4 py-4 md:px-10 mx-auto w-full -m-24 bg-yellow-200 ">
           <Switch>
             <Route path="/home" exact component={Home} />
-            <Route path="/auth/login" exact component={Login} />
+            <Route path="/auth/login" exact render={() => <Login setUser={setUser} />} />
             <Route path="/auth/register" exact render={() => <Register setUser={setUser} />} />
             <Route path="/match/live" exact component={LiveMatch} />
             <Route path="/match/schedule" exact component={Schedule} />
