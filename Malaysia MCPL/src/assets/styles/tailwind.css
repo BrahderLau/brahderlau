@@ -1954,6 +1954,10 @@ video {
   padding-right: 3rem;
 }
 
+.pl-16 {
+  padding-left: 4rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -2020,6 +2024,11 @@ video {
   --placeholder-opacity: 1;
   color: #cbd5e0;
   color: rgba(203, 213, 224, var(--placeholder-opacity));
+}
+
+.placeholder-red-300::placeholder {
+  --placeholder-opacity: 1;
+  color: rgba(252, 165, 165, var(--tw-placeholder-opacity));
 }
 
 .pointer-events-none {
@@ -2915,11 +2924,12 @@ video {
     60%, 85%{left: -200%}
 }
 .error {
-    border: 2px solid #FF6565;
-  }
+  --border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+}
 
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} */
+}

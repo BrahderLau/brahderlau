@@ -68,40 +68,40 @@ export default function Register(props) {
   const manualRegister = async (user) => {
     await auth.createUserWithEmailAndPassword(user.email, user.password)
     .then(async(userCredential) => {
-      // Signed in 
-      var user = userCredential.user;
+      // // Signed in 
+      // var user = userCredential.user;
       //create user
       user.fullName = user.firstName + " " + user.lastName;
       user.role = "user";
       //remove password and confirmPassword
       const { password,confirmPassword, ...userData } = user;
-      db.collection("user").add({
-          firstName: userData.firstName,
-          lastName: userData.lastName,
-          fullName: userData.fullName,
+      db.collection("user").doc(auth.currentUser.uid).set({
+        firstName: userData.firstName,
+        lastName: userData.lastName,
+        fullName: userData.fullName,
+        displayName: userData.displayName,
+        email: userData.email,
+        gender: userData.gender,
+        DOB: userData.DOB,
+        role: "user",
+      }).then(()=>{
+        const newUser = {
           displayName: userData.displayName,
-          email: userData.email,
-          gender: userData.gender,
-          DOB: userData.DOB,
-          role: "user"   
-        }).then(()=>{
-          const newUser = {
-            displayName: userData.displayName,
-            role: userData.role
-          }
-          //save in a state
-          props.setUser(newUser);
-          //save in a local storage ; cookies is used for communication between backend and frontend in the server
-          localStorage.setItem('user', JSON.stringify(newUser));
+          role: userData.role
+        }
+        //save in a state
+        props.setUser(newUser);
+        //save in a local storage ; cookies is used for communication between backend and frontend in the server
+        localStorage.setItem('user', JSON.stringify(newUser));
 
-          swal({
-            title: "Successful",
-            text: "Account created successful!",
-            icon: "success",
-          })
-          .then(()=>{
-            history.push(`/home`)
-          })
+        swal({
+          title: "Successful",
+          text: "Account created successful!",
+          icon: "success",
+        })
+        .then(()=>{
+          history.push(`/home`)
+        })
       })
     })
     .catch((error) => {
@@ -127,8 +127,8 @@ export default function Register(props) {
         if (userInfo.isNewUser === true) {
           const { email, name, first_name, last_name, gender, birthday, picture} = userInfo.profile;
           await db.collection('user')
-          .add({
-            uid: auth.currentUser.uid,
+          .doc(auth.currentUser.uid)
+          .set({
             firstName: first_name,
             lastName: last_name,
             fullName: name,
@@ -175,38 +175,35 @@ export default function Register(props) {
         }
         else {
           await db.collection('user')
-          .where("uid", "==", auth.currentUser.uid)
+          .doc(auth.currentUser.uid)
           .get()
-          .then((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                // doc.data() is never undefined for query doc snapshots
-              const {displayName, profilePicture, role} = doc.data();
-              const existingUser = {
-                displayName: displayName,
-                profilePicture: profilePicture,
-                role: role
-              }
-              //save in a state
-              props.setUser(existingUser);
-              //save in a local storage ; cookies is used for communication between backend and frontend in the server
-              localStorage.setItem('user', JSON.stringify(existingUser));
+          .then((doc) => {
+            const {displayName, profilePicture, role} = doc.data();
+            const existingUser = {
+              displayName: displayName,
+              profilePicture: profilePicture,
+              role: role
+            }
+            //save in a state
+            props.setUser(existingUser);
+            //save in a local storage ; cookies is used for communication between backend and frontend in the server
+            localStorage.setItem('user', JSON.stringify(existingUser));
+            swal({
+              title: "Successful",
+              text: "Account Login Successful!",
+              icon: "success",
+            })
+            .then(()=>{
+              history.push(`/home`)
+            })
+            .catch((error) => {
               swal({
-                title: "Successful",
-                text: "Account Login Successful!",
-                icon: "success",
+                title: error.code,
+                text: error.message,
+                icon: "error",
               })
-              .then(()=>{
-                history.push(`/home`)
-              })
-              .catch((error) => {
-                swal({
-                  title: error.code,
-                  text: error.message,
-                  icon: "error",
-                })
-              });
             });
-          })
+          });
         }
         
       })
@@ -248,7 +245,8 @@ export default function Register(props) {
         if (userInfo.isNewUser === true) {
           const { email, name, family_name, given_name, picture} = userInfo.profile;
           await db.collection('user')
-          .add({
+          .doc(auth.currentUser.uid)
+          .set({
             firstName: given_name,
             lastName: family_name,
             fullName: name,
@@ -293,37 +291,34 @@ export default function Register(props) {
         }
         else {
           await db.collection('user')
-            .where("uid", "==", auth.currentUser.uid)
+            .doc(auth.currentUser.uid)
             .get()
-            .then((querySnapshot) => {
-              querySnapshot.forEach((doc) => {
-                  // doc.data() is never undefined for query doc snapshots
-                const {displayName, profilePicture, role} = doc.data();
-                const existingUser = {
-                  displayName: displayName,
-                  profilePicture: profilePicture,
-                  role: role
-                }
-                //save in a state
-                props.setUser(existingUser);
-                //save in a local storage ; cookies is used for communication between backend and frontend in the server
-                localStorage.setItem('user', JSON.stringify(existingUser));
+            .then((doc) => {
+              const {displayName, profilePicture, role} = doc.data();
+              const existingUser = {
+                displayName: displayName,
+                profilePicture: profilePicture,
+                role: role
+              }
+              //save in a state
+              props.setUser(existingUser);
+              //save in a local storage ; cookies is used for communication between backend and frontend in the server
+              localStorage.setItem('user', JSON.stringify(existingUser));
+              swal({
+                title: "Successful",
+                text: "Account Login Successful!",
+                icon: "success",
+              })
+              .then(()=>{
+                history.push(`/home`)
+              })
+              .catch((error) => {
                 swal({
-                  title: "Successful",
-                  text: "Account Login Successful!",
-                  icon: "success",
+                  title: error.code,
+                  text: error.message,
+                  icon: "error",
                 })
-                .then(()=>{
-                  history.push(`/home`)
-                })
-                .catch((error) => {
-                  swal({
-                    title: error.code,
-                    text: error.message,
-                    icon: "error",
-                  })
-                });
-            });
+              });
           });
         } 
       })

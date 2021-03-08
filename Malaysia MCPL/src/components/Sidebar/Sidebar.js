@@ -5,19 +5,11 @@ import {auth} from "../../../src/firebase.js";
 // import { AuthConsumer } from "../../authContext.js"
 // import Can from "../Can.js"
 import styled from 'styled-components'
-//import AdminNavbar from "components/Navbars/AdminNavbar.js";
 
-
-//import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
-//import UserDropdown from "components/Dropdowns/UserDropdown.js";
-
-
-export default function Sidebar({user, setUser}) {
-
+export default function Sidebar(props) {
   const [collapseShow, setCollapseShow] = useState("hidden");
 
-  const logOut = () => { 
-
+  const logOut = () => {
     auth.signOut().then(()=>{
       swal({
         title: "Are you sure?",
@@ -28,15 +20,34 @@ export default function Sidebar({user, setUser}) {
       })
       .then((willLogOut) => {
         if (willLogOut) {
-          swal("Account Logged Out Successful!", {
-            icon: "success",
+          Promise.resolve()
+          .then(() => { 
+            props.setUser(null);
+            localStorage.removeItem('user');
+          })
+          .then(() => {
+            window.location.reload();
+            // swal({
+            //   title: "Account Logged Out Successful!",
+            //   text: "Please refresh the web app to login",
+            //   icon: "success",
+            //   closeOnClickOutside: false,
+            //   buttons: false
+            // });
           });
-          setUser(null);
-          localStorage.removeItem('user');
-          setCollapseShow("hidden");
         }
       });
     })
+    .catch((error) => {
+      if(error.code === "auth/email-already-in-use"){
+        error.message += " Please proceed with login."
+      }
+      swal({
+        title: error.code,
+        text: error.message,
+        icon: "error",
+      });
+    });
   }
 
   return(
@@ -58,7 +69,7 @@ export default function Sidebar({user, setUser}) {
             </span> 
             <div className="w-6/12 sm:w-4/12 px-6">
               <img
-                src={user && user.profilePicture ? user.profilePicture : "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898-450x450.png"}
+                src={props.user &&props.user.profilePicture ? props.user.profilePicture : "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898-450x450.png"}
                 alt="..."
                 className="w-full rounded-full align-middle border-none shadow-md"
                 >
@@ -114,9 +125,11 @@ export default function Sidebar({user, setUser}) {
             {/* <hr className="my-4 md:min-w-full" /> */}
             
             <span className="md:block text-center md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-xs font-bold p-4 px-0">
-              {user && user.displayName 
-              ? `Welcome Back, ${user.displayName}!` 
-              : "Welcome, Guest!"}
+              {props.user && props.user.displayName
+              ? `Welcome Back, ${props.user.displayName}!` 
+                : props.user && props.user.firstName
+                ? `Welcome Back, ${props.user.firstName}!`
+                : "Welcome, Guest!"}
             </span>
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
@@ -143,32 +156,32 @@ export default function Sidebar({user, setUser}) {
                 </Link>
               </li>
               {
-                user 
+                props.user 
                 ?    
                 <>
                   <li className="items-center">
-                      <Link
-                        onClick={logOut}
+                    <Link
+                      onClick={logOut}
+                      className={
+                        ":focus text-xs uppercase py-3 font-bold block " +
+                        (window.location.href.indexOf("/logout") !== -1
+                          ? "text-blue-500 hover:text-blue-600"
+                          : "text-gray-800 hover:text-gray-600")
+                      }
+                      to="/logout"
+                    >
+                      <i
                         className={
-                          "text-xs uppercase py-3 font-bold block " +
+                          "fas fa-sign-out-alt mr-2 text-sm " +
                           (window.location.href.indexOf("/logout") !== -1
-                            ? "text-blue-500 hover:text-blue-600"
-                            : "text-gray-800 hover:text-gray-600")
+                            ? "opacity-75"
+                            : "text-gray-500")
                         }
-                        to="/logout"
-                      >
-                        <i
-                          className={
-                            "fas fa-sign-out-alt mr-2 text-sm " +
-                            (window.location.href.indexOf("/logout") !== -1
-                              ? "opacity-75"
-                              : "text-gray-500")
-                          }
-                        ></i>{" "}
-                        Log Out
-                      </Link>
-                    </li>
-                  </>
+                      ></i>{" "}
+                      Log Out
+                    </Link>
+                  </li>
+                </>
                 : 
                 <>
                   <li className="items-center">
@@ -457,63 +470,67 @@ export default function Sidebar({user, setUser}) {
               </li>
             </ul>
 
-            {/* Divider */}
-            <hr className="my-4 md:min-w-full" />
-            {/* Heading */}
-            <h6 className="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-              User
-            </h6>
-            {/* Navigation */}
+            {
+                props.user 
+                ?  
+                <>
+                  <hr className="my-4 md:min-w-full" />
+                  <h6 className="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+                    User
+                  </h6>
 
-            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+                  <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
 
-              <li className="items-center">
-                <Link
-                  onClick={() => setCollapseShow("hidden")}
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/user/profile") !== -1
-                      ? "text-blue-500 hover:text-blue-600"
-                      : "text-gray-800 hover:text-gray-600")
-                  }
-                  to="/user/profile"
-                >
-                  <i
-                    className={
-                      "fas fa-user-edit mr-2 text-sm " +
-                      (window.location.href.indexOf("/user/profile") !== -1
-                        ? "opacity-75"
-                        : "text-gray-500")
-                    }
-                  ></i>{" "}
-                  Profile
-                </Link>
-              </li>
+                    <li className="items-center">
+                      <Link
+                        onClick={() => setCollapseShow("hidden")}
+                        className={
+                          "text-xs uppercase py-3 font-bold block " +
+                          (window.location.href.indexOf("/user/profile") !== -1
+                            ? "text-blue-500 hover:text-blue-600"
+                            : "text-gray-800 hover:text-gray-600")
+                        }
+                        to="/user/profile"
+                      >
+                        <i
+                          className={
+                            "fas fa-user-edit mr-2 text-sm " +
+                            (window.location.href.indexOf("/user/profile") !== -1
+                              ? "opacity-75"
+                              : "text-gray-500")
+                          }
+                        ></i>{" "}
+                        Profile
+                      </Link>
+                    </li>
 
-              <li className="items-center">
-                <Link
-                  onClick={() => setCollapseShow("hidden")}
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/user/myteam") !== -1
-                      ? "text-blue-500 hover:text-blue-600"
-                      : "text-gray-800 hover:text-gray-600")
-                  }
-                  to="/user/myteam"
-                >
-                  <i
-                    className={
-                      "fab fa-teamspeak mr-2 text-sm " +
-                      (window.location.href.indexOf("/user/myteam") !== -1
-                        ? "opacity-75"
-                        : "text-gray-500")
-                    }
-                  ></i>{" "}
-                  My Team
-                </Link>
-              </li>
-            </ul>
-              
+                    <li className="items-center">
+                      <Link
+                        onClick={() => setCollapseShow("hidden")}
+                        className={
+                          "text-xs uppercase py-3 font-bold block " +
+                          (window.location.href.indexOf("/user/myteam") !== -1
+                            ? "text-blue-500 hover:text-blue-600"
+                            : "text-gray-800 hover:text-gray-600")
+                        }
+                        to="/user/myteam"
+                      >
+                        <i
+                          className={
+                            "fab fa-teamspeak mr-2 text-sm " +
+                            (window.location.href.indexOf("/user/myteam") !== -1
+                              ? "opacity-75"
+                              : "text-gray-500")
+                          }
+                        ></i>{" "}
+                        My Team
+                      </Link>
+                    </li>
+                  </ul>
+                </>
+              :
+                <></>
+            }
             {/* Divider */}
             {/* <hr className="my-4 md:min-w-full" /> */}
             {/* Heading */}
@@ -749,6 +766,8 @@ export default function Sidebar({user, setUser}) {
   );
 }
 
-const Logo = styled.div`
- size: 100%;
+const LogOutButton = styled.div`
+  *:focus {
+      outline: none;
+  }
 `

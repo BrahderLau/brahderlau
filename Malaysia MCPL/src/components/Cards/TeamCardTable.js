@@ -154,7 +154,7 @@ export default function TeamCardTable({ color }) {
                       : "bg-blue-800 text-blue-300 border-blue-700")
                   }
                 >
-                  Team Founder
+                  Team Captain
                 </th>
                 <th
                   className={

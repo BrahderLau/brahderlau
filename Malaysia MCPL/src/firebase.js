@@ -1,4 +1,5 @@
 import firebase from 'firebase'
+import "firebase/storage"
 
 const prodFirebaseConfig = {
     apiKey: "AIzaSyC-5jd4AVkW3SOqPv6Cw_W6sawYIJm-wG8",
@@ -20,14 +21,15 @@ const prodFirebaseConfig = {
 
 const firebaseApp = firebase.initializeApp(prodFirebaseConfig)
 const db = firebaseApp.firestore();
+const storage = firebase.storage();
 const auth = firebase.auth();
 const googleProvider = new firebase.auth.GoogleAuthProvider()
-googleProvider.addScope('https://www.googleapis.com/auth/user.birthday.read');
-googleProvider.addScope('https://www.googleapis.com/auth/user.gender.read');
+// googleProvider.addScope('https://www.googleapis.com/auth/user.birthday.read');
+// googleProvider.addScope('https://www.googleapis.com/auth/user.gender.read');
 
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
 facebookProvider.addScope('user_birthday');
 facebookProvider.addScope('user_gender');
 
-export {auth, googleProvider, facebookProvider};
+export {auth, storage, googleProvider, facebookProvider};
 export default db; //gonna use db anywhere

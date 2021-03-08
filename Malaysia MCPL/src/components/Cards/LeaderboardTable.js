@@ -143,10 +143,10 @@ export default function LeaderboardTable({ color }) {
               {team.teamBattleDetails["winsCount"]}
             </td>
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-              {team.teamBattleDetails["losesCount"]}
+              {team.teamBattleDetails["drawCount"]}
             </td>
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-              {team.teamBattleDetails["drawCount"]}
+              {team.teamBattleDetails["losesCount"]}
             </td>
             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
               {team.teamBattleDetails["totalPoints"]}
@@ -180,7 +180,7 @@ export default function LeaderboardTable({ color }) {
                   (color === "light" ? "text-gray-800" : "text-white")
                 }
               >
-                Leaderboard  (Last Updated: 4 March 2021)
+                Leaderboard  (Last Updated: 9 March 2021)
               </h3>
             </div>
           </div>

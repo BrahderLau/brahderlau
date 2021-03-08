@@ -160,12 +160,23 @@ export default function Footer() {
                   Organized by Magic Chess Union (MCU)
                 </a><br/>
                 <a
+                  href="#pablo"
+                >
+                  Web Application Developed By
+                </a><br/>
+                <a 
                   href="https://brahderlau.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 w-16"
                 >
-                  Web Application Developed By BrahderLau
+                  BrahderLau (+60125069787)
+                  {/* <img 
+                    src="https://fontmeme.com/permalink/210308/b254553f48c08b386b2b5072b11ea318.png" 
+                    alt="signature-fonts" 
+                    border="0"
+                    className="w-1/4"
+                  /> */}
                 </a><br/>
                 <a href="#pablo"className="text-gray-600 text-sm font-semibold py-1">
                   Copyright © {new Date().getFullYear()} Malaysia MCPL.
