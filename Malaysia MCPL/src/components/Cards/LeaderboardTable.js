@@ -43,8 +43,9 @@ export default function LeaderboardTable({ color }) {
       {
         sortByRank(teamData).map(function(team, index) {
           return( 
-          <tr className="border-b" key={index}>
-            <th className="border-t-0 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left">
+          <tr className={team.teamBattleDetails["currentRanking"] > 16 ? "border-b bg-red-200" : "border-b"} key={index}>
+            <th 
+              className="border-t-0 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left">
               <span
                 className={
                   "ml-3 " +
@@ -180,7 +181,7 @@ export default function LeaderboardTable({ color }) {
                   (color === "light" ? "text-gray-800" : "text-white")
                 }
               >
-                Leaderboard  (Last Updated: 9 March 2021)
+                Leaderboard  (Last Updated: 10 March 2021)
               </h3>
             </div>
           </div>

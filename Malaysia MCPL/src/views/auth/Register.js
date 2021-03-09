@@ -17,46 +17,52 @@ export default function Register(props) {
 
   const validationSchema = Yup.object().shape({
     firstName: Yup.string()
-      .required( 'First Name Is Required')
-      .min(2, 'First Name Must Have At Least 2 Characters')
-      .max(50, "First Name Can't Be Longer Than 50 Charcters") 
+      .required( '*First Name Is Required')
+      .min(2, '*First Name Must Have At Least 2 Characters')
+      .max(50, "*First Name Can't Be Longer Than 50 Charcters") 
       .label('firstName'),
     lastName: Yup.string()
-      .required( 'Last Name Is Required')
-      .min(2, 'Last Name Must Have At Least 2 Characters')
-      .max(50, "Last Name Can't Be Longer Than 50 Charcters") 
+      .required( '*Last Name Is Required')
+      .min(2, '*Last Name Must Have At Least 2 Characters')
+      .max(50, "*Last Name Can't Be Longer Than 50 Charcters") 
       .label('lastName'),
     displayName: Yup.string()
-      .required( 'Display Name Is Required')
-      .min(2, 'Display Name Must Have At Least 2 Characters')
-      .max(20, "Display Name Can't Be Longer Than 20 Charcters") 
+      .required( '*Display Name Is Required')
+      .min(2, '*Display Name Must Have At Least 2 Characters')
+      .max(20, "*Display Name Can't Be Longer Than 20 Charcters") 
       .label('displayName'),
+    NRIC: Yup.string()
+      .required( '*NRIC Is Required')
+      .min(12, '*NRIC Must Be Exactly 12 Numbers')
+      .max(12, '*NRIC Must Be Exactly 12 Numbers') 
+      .label('NRIC'),
     gender: Yup.string()
-      .required( 'Gender Is Required')
+      .required( '*Gender Is Required')
       .label('gender'),
     DOB: Yup.date()
-      .required ( 'Date Of Birth Is Required')
+      .required ( '*Date Of Birth Is Required')
       .nullable()
-      .max(new Date(), "Date Can't Be Later Than Today")
+      .max(new Date(), "*Date Can't Be Later Than Today")
       .label('DOB'),
     email: Yup.string()
-      .required( 'Email Is Required')
-      .email( 'Email Is Invalid')
-      .label('Email'),
+      .required( '*Email Is Required')
+      .email( '*Email Is Invalid')
+      .label('*Email'),
     password: Yup.string()
-      .required( 'Password Is Required')
-      .matches(passwordRegExp, "Password Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character")
-      .label('Password'),
+      .required( '*Password Is Required')
+      .matches(passwordRegExp, "*Password Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character")
+      .label('*Password'),
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref('password')], 'Confirm Password Does Not Match With Password')
-      .required('Confirm Password Is Required')
-      .label('confirmPassword'),
+      .oneOf([Yup.ref('password')], '*Confirm Password Does Not Match With Password')
+      .required('*Confirm Password Is Required')
+      .label('*confirmPassword'),
   });
 
   const initialValues = {
     firstName: "",
     lastName: "",
     displayName: "",
+    NRIC: "",
     email: "",
     gender: "",
     DOB: "",
@@ -80,6 +86,7 @@ export default function Register(props) {
         lastName: userData.lastName,
         fullName: userData.fullName,
         displayName: userData.displayName,
+        NRIC: userData.NRIC,
         email: userData.email,
         gender: userData.gender,
         DOB: userData.DOB,
@@ -430,6 +437,31 @@ export default function Register(props) {
                 />
                 <ErrorMessage 
                   name="displayName" 
+                  component="div" 
+                  className= "block text-red-500 text-xs font-bold mb-2 py-2"
+                />
+              </div>
+              <div className="relative w-full mb-3">
+                <label
+                  className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="NRIC"
+                >
+                  NRIC
+                </label>
+                <Field 
+                  name="NRIC"
+                  type="number"
+                  className= {
+                    "px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" 
+                    + (touched.displayName && errors.displayName ? "error" : null)
+                  }
+                  placeholder="e.g. XXXXXXXXXXXX (without '-')"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.NRIC}
+                />
+                <ErrorMessage 
+                  name="NRIC" 
                   component="div" 
                   className= "block text-red-500 text-xs font-bold mb-2 py-2"
                 />

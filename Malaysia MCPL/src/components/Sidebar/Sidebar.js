@@ -509,6 +509,29 @@ export default function Sidebar(props) {
                         onClick={() => setCollapseShow("hidden")}
                         className={
                           "text-xs uppercase py-3 font-bold block " +
+                          (window.location.href.indexOf("/user/team-register") !== -1
+                            ? "text-blue-500 hover:text-blue-600"
+                            : "text-gray-800 hover:text-gray-600")
+                        }
+                        to="/user/team-register"
+                      >
+                        <i
+                          className={
+                            "fas fa-handshake mr-2 text-sm " +
+                            (window.location.href.indexOf("/user/team-register") !== -1
+                              ? "opacity-75"
+                              : "text-gray-500")
+                          }
+                        ></i>{" "}
+                        Team Registration
+                      </Link>
+                    </li>
+
+                    <li className="items-center">
+                      <Link
+                        onClick={() => setCollapseShow("hidden")}
+                        className={
+                          "text-xs uppercase py-3 font-bold block " +
                           (window.location.href.indexOf("/user/myteam") !== -1
                             ? "text-blue-500 hover:text-blue-600"
                             : "text-gray-800 hover:text-gray-600")
@@ -667,6 +690,7 @@ export default function Sidebar(props) {
             {/* Navigation */}
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+              
               <li className="items-center">
                 <Link
                   onClick={() => setCollapseShow("hidden")}
@@ -680,13 +704,13 @@ export default function Sidebar(props) {
                 >
                   <i
                     className={
-                      "fas fa-chess mr-2 text-sm" +
+                      "fas fa-chess-rook mr-2 text-sm " +
                       (window.location.href.indexOf("/admin/create-match") !== -1
                         ? "opacity-75"
                         : "text-gray-500")
                     }
                   ></i>{" "}
-                  New Match
+                  Match List
                 </Link>
               </li>
 

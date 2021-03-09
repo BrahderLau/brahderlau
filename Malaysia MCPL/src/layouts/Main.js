@@ -28,6 +28,7 @@ import TopScorer from "views/player/TopScorer.js";
 import PlayerList from "views/player/PlayerList.js";
 
 import Profile from "views/user/Profile.js";
+import TeamRegister from "views/user/TeamRegister.js";
 import MyTeam from "views/user/MyTeam.js";
 
 import NewMatch from "views/admin/CreateMatch.js"
@@ -38,7 +39,7 @@ import ManageTeam from "views/admin/ManageTeam.js"
 export default function Main() {
 
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')))
-
+  
   return (
     <div>
       <Sidebar user={user} setUser={setUser}/>
@@ -58,6 +59,7 @@ export default function Main() {
             <Route path="/player/top-scorer" exact component={TopScorer} />
             <Route path="/player/player-list" exact component={PlayerList} />
             <Route path="/user/profile" exact component={Profile} />
+            <Route path="/user/team-register" exact component={TeamRegister} />
             <Route path="/user/myteam" exact component={MyTeam} />
             <Route path="/admin/create-match" exact component={NewMatch} />
             <Route path="/admin/match-list" exact component={MatchList} />

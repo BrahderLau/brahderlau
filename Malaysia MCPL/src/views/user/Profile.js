@@ -36,56 +36,64 @@ function Profile() {
     //     ),
     displayName: Yup
         .string()
-        .required( 'Display Name Is Required')
-        .min(2, 'Display Name Must Have At Least 2 Characters')
-        .max(20, "Display Name Can't Be Longer Than 20 Charcters") 
+        .required( '*Display Name Is Required')
+        .min(2, '*Display Name Must Have At Least 2 Characters')
+        .max(20, "*Display Name Can't Be Longer Than 20 Charcters") 
         .label('displayName'),
     fullName: Yup
         .string()
-        .required( 'Full Name Is Required')
-        .min(2, 'Full Name Must Have At Least 2 Characters')
-        .max(50, "Full Name Can't Be Longer Than 50 Charcters") 
+        .required( '*Full Name Is Required')
+        .min(2, '*Full Name Must Have At Least 2 Characters')
+        .max(50, "*Full Name Can't Be Longer Than 50 Charcters") 
         .label('fullName'),
     firstName: Yup
         .string()
-        .required( 'First Name Is Required')
-        .min(2, 'First Name Must Have At Least 2 Characters')
-        .max(50, "First Name Can't Be Longer Than 50 Charcters") 
+        .required( '*First Name Is Required')
+        .min(2, '*First Name Must Have At Least 2 Characters')
+        .max(50, "*First Name Can't Be Longer Than 50 Charcters") 
         .label('firstName'),
     lastName: Yup
         .string()
-        .required( 'Last Name Is Required')
-        .min(2, 'Last Name Must Have At Least 2 Characters')
-        .max(50, "Last Name Can't Be Longer Than 50 Charcters") 
+        .required( '*Last Name Is Required')
+        .min(2, '*Last Name Must Have At Least 2 Characters')
+        .max(50, "*Last Name Can't Be Longer Than 50 Charcters") 
         .label('lastName'),
+    NRIC: Yup.string()
+        .required( '*NRIC Is Required')
+        .min(12, '*NRIC Must Be Exactly 12 Numbers')
+        .max(12, '*NRIC Must Be Exactly 12 Numbers') 
+        .label('NRIC'),
     gender: Yup.string()
         //.required( 'Gender Is Required')
         .label('gender'),
     DOB: Yup.date()
         //.required ( 'Date Of Birth Is Required')
         .nullable()
-        .max(new Date(), "Date Can't Be Later Than Today")
+        .max(new Date(), "*Date Can't Be Later Than Today")
         .label('DOB'),
-    email: Yup.string()
-        .required( 'Email Is Required')
-        .email( 'Email Is Invalid')
-        .label('email'),
+    // email: Yup.string()
+    //     .required( '*Email Is Required')
+    //     .email( '*Email Is Invalid')
+    //     .label('*email'),
     contactNumber: Yup.string()
         //.required( 'Contact Number Is Required')
-        .min(10, 'Contact Number Must Be At Least 10 Numbers')
-        .max(11, "Contact Number Can't Be More Than 11 Numbers")
+        .min(10, '*Contact Number Must Be At Least 10 Numbers')
+        .max(11, "*Contact Number Can't Be More Than 11 Numbers")
+        .label('contactNumber'),
+    location: Yup.string()
+        .min(2, '*Location Must Have At Least 2 Characters')
         .label('contactNumber'),
     IGN: Yup.string()
-        .min(2, 'Account IGN Must Have At Least 2 Characters')
-        .max(20, "Account IGN Can't Be Longer Than 20 Charcters") 
+        .min(2, '*Account IGN Must Have At Least 2 Characters')
+        .max(20, "*Account IGN Can't Be Longer Than 20 Charcters") 
         .label('accountIGN'),
     accountId: Yup.string()
-        .min(6, 'Account Server Must Be At Least 6 Numbers')
-        .max(12, "Account Server Can't Be More Than 12 Numbers")
+        .min(6, '*Account Server Must Be At Least 6 Numbers')
+        .max(12, "*Account Server Can't Be More Than 12 Numbers")
         .label('accountId'),
     accountServer: Yup.string()
-        .min(4, 'Account Server Must Be Eaxct 4 Numbers')
-        .max(4, "Account Server Must Be Exaft 4 Numbers")
+        .min(4, '*Account Server Must Be Eaxct 4 Numbers')
+        .max(4, "*Account Server Must Be Exaft 4 Numbers")
         .label('accountServer'),
   });
 
@@ -119,10 +127,12 @@ function Profile() {
                         fullName: meData.fullName ? meData.fullName:"",
                         firstName: meData.firstName ? meData.firstName:"",
                         lastName: meData.lastName ? meData.lastName:"",
+                        NRIC: meData.NRIC ? meData.NRIC:"",
                         DOB: meData.DOB ? meData.DOB:"",
                         gender: meData.gender ? meData.gender:"",
                         email: meData.email ? meData.email:"",
                         contactNumber: meData.contactNumber ? meData.contactNumber:"",
+                        location: meData.location ? meData.location: "",
                         profilePicture: meData.profilePicture ? meData.profilePicture:"",
                         IGN: meData.IGN ? meData.IGN:"",
                         accountId: meData.accountId ? meData.accountId:"",
@@ -148,21 +158,22 @@ function Profile() {
                 })
             });
         }
-        else {
-            console.log("no user gg")
-        }
     })
   }
 
   const saveProfile = (userData) => {
-      const path = `${userData.uid}/${userData.profilePicture.name}`
+      const path = `${auth.currentUser.uid}`///${userData.profilePicture.name}`
       const fileRef = storage.ref("images/users").child(path);
       const uploadTask = fileRef.put(userData.profilePicture);
       uploadTask.on(
           "stage_changed",
           snapshot => {},
           error => {
-            console.log(error);
+            swal({
+                title: error.code,
+                text: error.message,
+                icon: "error",
+            })
           },
           () => {
               storage
@@ -171,7 +182,17 @@ function Profile() {
                 .getDownloadURL()
                 .then(url => {
                     userData.profilePicture = url;
+                    var data = JSON.parse(localStorage.getItem('user'));
+                    data.profilePicture = userData.profilePicture;
+                    localStorage.setItem('user', JSON.stringify(data));
                     postData(userData)
+                })
+                .catch((error) => {
+                    swal({
+                      title: error.code,
+                      text: error.message,
+                      icon: "error",
+                    })
                 });
           }
       )
@@ -273,7 +294,7 @@ function Profile() {
                                         !isEdit
                                         ?
                                             <button
-                                                className="bg-gray-900 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-4 ease-linear transition-all duration-150"
+                                                className="mb-2 bg-gray-900 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-4 ease-linear transition-all duration-150"
                                                 type="button"
                                                 onClick={editOnClick}
                                             >
@@ -281,7 +302,7 @@ function Profile() {
                                             </button>
                                         :
                                             <button
-                                                className="bg-gray-900 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-4 ease-linear transition-all duration-150"
+                                                className="mb-2 bg-gray-900 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-4 ease-linear transition-all duration-150"
                                                 type="reset"
                                                 onClick={(e) =>{
                                                     handleReset()
@@ -476,6 +497,35 @@ function Profile() {
                                     />
                                 </div>
                             </div>
+
+                            <div className="w-full lg:w-6/12 px-4">
+                                <div className="relative w-full mb-3">
+                                    <label
+                                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        htmlFor="NRIC"
+                                    >
+                                        NRIC
+                                    </label>
+                                    <Field
+                                        name="NRIC"
+                                        type="text"
+                                        className={
+                                            "px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                                            + (touched.NRIC && errors.NRIC ? "error" : null)
+                                        }
+                                        disabled={!isEdit}
+                                        value={values.NRIC}
+                                        placeholder="NRIC"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                    />
+                                    <ErrorMessage 
+                                        name="NRIC" 
+                                        component="div" 
+                                        className= "block text-red-500 text-xs font-bold mb-2 py-2"
+                                    />
+                                </div>
+                            </div>
                             
                             <div className="w-full lg:w-6/12 px-4">
                                 <div className="relative w-full mb-3">
@@ -608,6 +658,35 @@ function Profile() {
                                     />
                                     <ErrorMessage 
                                         name="contactNumber" 
+                                        component="div" 
+                                        className= "block text-red-500 text-xs font-bold mb-2 py-2"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="w-full lg:w-6/12 px-4">
+                                <div className="relative w-full mb-3">
+                                    <label
+                                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        htmlFor="location"
+                                    >
+                                        Location
+                                    </label>
+                                    <Field
+                                        name="location"
+                                        type="text"
+                                        className={
+                                            "px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                                            + (touched.location && errors.location ? "error" : null)
+                                        }
+                                        disabled={!isEdit}
+                                        value={values.location}
+                                        placeholder="Location"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                    />
+                                    <ErrorMessage 
+                                        name="location" 
                                         component="div" 
                                         className= "block text-red-500 text-xs font-bold mb-2 py-2"
                                     />
@@ -757,7 +836,7 @@ function Profile() {
                                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
                                         htmlFor="grid-password"
                                     >
-                                        Number of Games
+                                        Games Played
                                     </label>
                                     <input
                                         type="text"
@@ -863,8 +942,7 @@ function Profile() {
                             </div>
                         </div>
                     </div>
-                
-            </Form>    
+                </Form>    
             )}
         </Formik>
     </>

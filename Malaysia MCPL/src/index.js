@@ -8,13 +8,6 @@ import "assets/styles/tailwind.css";
 // layouts
 
 import Main from "layouts/Main.js";
-// import Auth from "layouts/Auth.js";
-
-// // views without layouts
-
-// import Landing from "views/Landing.js";
-// import Profile from "views/Profile.js";
-// import Index from "views/Index.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -27,11 +20,6 @@ ReactDOM.render(
       <Route path="/player" component={Main} />
       <Route path="/user" component={Main} />
       <Route path="/admin" component={Main} />
-      {/* add routes without layouts */}
-      {/* <Route path="/landing" exact component={Landing} />
-      <Route path="/profile" exact component={Profile} />
-      <Route path="/" exact component={Index} /> */}
-      {/* add redirect for first page */}
       <Redirect to="/home" />
     </Switch>
   </BrowserRouter>,
