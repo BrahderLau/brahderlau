@@ -121,21 +121,21 @@ const educationInfo = {
     {
       schoolName: "Asia Pacific University of Technology & Innovation (APU)",
       logo: require("./assets/images/APU.png"),
-      subHeader: "Bachelor of Degree in Software Engineering",
-      duration: "February 2018 - Present",
-      desc: "APU Merit Scholarship Holder with GPA 3.9"
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      subHeader: "BSc Hons in Software Engineering",
+      duration: "February 2018 - February 2021",
+      //desc: "APU Merit Scholarship Holder with CGPA 3.767"
+      descBullets: [
+        "APU Merit Scholarship Holder",
+        "First Class Degree Honour with CGPA 3.767"
+      ]
     },
     {
       schoolName: "SMK Methodist (A.C.S) Sitiawan",
       logo: require("./assets/images/secondarySchool.jpg"),
       subHeader: "Science Class",
       duration: "January 2012 - December 2016",
-      desc:
-        "SPM 8A, 2B, 1C"
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      //desc:"SPM 8A, 2B, 1C"
+      descBullets: ["SPM 8A, 2B, 1C"]
     }
   ]
 };
@@ -146,16 +146,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend / Design", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      Stack: "Prototype Design", //Insert stack or technology you have experience in
+      progressPercentage: "85%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Frontend",
+      progressPercentage: "75%"
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "90%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -167,29 +167,37 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "IT Software Engineer",
+      role: "Software Engineer 1 - IT",
       company: "Dell",
       companylogo: require("./assets/images/Dell.png"),
       date: "22 March 2021 onwards",
-      desc: "Software Design, Development, Testing and Deployment...",
+      desc: "Graduate Development Programme (GDP)",
       descBullets: [
-        "Coming soon..."
-        // "Coaching",
-        // "Streaming live on YouTube",
-        // "Creating tutorials"
+        "Software Design, Development, Testing and Deployment..."
       ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "Part-time Software Developer Freelancer",
+      company: "Home",
+      companylogo: require("./assets/images/brahderlau_alt.jpg"),
+      date: "March 1, 2021 – Present",
+      desc:
+        "I'm currently developing Progressive Web Applications (PWA) including front-end and back-end for clients",
+      descBullets: [
+        "Built using React.js and Firebase with libraries such as Material UI, Tailswind and Postman as API testing and documentation"
+      ]
+    },
+    {
+      role: "Software Engineer Intern (Full-stack)",
       company: "Fusionex",
       companylogo: require("./assets/images/Fusionex.jpeg"),
       date: "18 November 2019 - 27 March 2020",
-      desc: "I've developed and enhanced the APIs, new features and designs for customer loyalty system.",
+      desc: "I've developed and enhanced the back-end APIs, front-end designs as well as writing batch scripts.",
       descBullets: [
-        "Design and implement new features to enhance the client system using JavaScript",
-        "Revamp the existing features of the clientsystem to meet the optimum output in terms of efficiency and usability",
-        "Cooperate with other project members to meetthe project requirements and deadline",
-        "Deal with the client’s service request and change request"
+        "Experienced with MEAN stack (MongoDB, ExpressJS, AngularJS, NodeJS) and PostgreSQL",
+        "Enhance the existing features of the system to meet the customer requirements in terms of efficiency and usability",
+        "Cooperate with other project members to meet and complete the project requirements",
+        "Manage and resolves client’s service request and change request"
       ]
     },
     {
@@ -200,8 +208,8 @@ const workExperiences = {
       desc:
         "I've streamed both Mobile Legends: Bang Bang 5v5 Mode and Magic Chess on Facebook.",
       descBullets: [
-        "Provides guidance step-by-step magic chess tutorials, strategies as well as current metas.",
-        "Upload highlights of the outstanding videos that is just BOOOOOOM.",
+        "Provides step-by-step tutorials, strategies as well as current metas in magic chess",
+        "Upload highlights of the outstanding videos that are just BOOOOOOM!",
         "Stream on Facebook using different streaming tools such as Streamlabs OBS and Omlet Arcade.",
         "Facebook page link: facebook.com/brahderlau.mlbb" 
       ]
@@ -226,30 +234,38 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/magic_chess_union.png"),
+      projectName: "Malaysia Magic Chess Professional League (MCPL) Web Application",
+      projectDesc: "A leaderboard, player and team registration system developed for mobile legends magic chess tournaments using React.js as Front-end and Firebase as Back-end",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "fa"
-        }
+          name: "Visit Website Link",
+          url: "https://malaysia-mcpl.web.app/"
+        },
+        {
+          name: "Visit Facebook Page",
+          url: "https://www.facebook.com/mcumlbb"
+        },
+        {
+          name: "Visit Project Link",
+          url: "https://github.com/BrahderLau/brahderlau/tree/master/Malaysia%20MCPL"
+        },
         //  you can add extra buttons here.
       ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: ""
-        }
-      ]
     }
+    // {
+    //   image: require("./assets/images/nextuLogo.webp"),
+    //   projectName: "Nextu",
+    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: ""
+    //     }
+    //   ]
+    // }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -268,7 +284,7 @@ const achievementSection = {
       image: require("./assets/images/AWS_BUILD_ON_ASEAN_2020.png"),
       footerLink: [
         {
-          name: "Certification",
+          name: "Certificate",
           url:
             "https://drive.google.com/file/d/1zVBhvAHvp8qnOVYMKqKQZDsE07Gp3wQC/view?usp=sharing"
         }
@@ -281,7 +297,7 @@ const achievementSection = {
       image: require("./assets/images/alibaba.PNG"),
       footerLink: [
         {
-          name: "Certification",
+          name: "Certificate",
           url:
             "https://drive.google.com/file/d/1efm0b636aKgj7DaG5owtPK1C5ukYx03s/view?usp=sharing"
         }
@@ -298,7 +314,8 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1SBbWQxiVGPDDSLRRhkp7xJMLp3KbxuEX/view?usp=sharing"
         },
         {
-          name: "Certification"
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1rJC2u2jQI5at5k9vtaFghKmK3cL0d8l-/view?usp=sharing"
         },
       ]
     }

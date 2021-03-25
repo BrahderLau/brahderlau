@@ -604,7 +604,17 @@ export default function Register(props) {
                     className="form-checkbox text-gray-800 ml-1 w-5 h-5 ease-linear transition-all duration-150"
                   />
                   <span className="ml-2 text-sm font-semibold text-gray-700">
-                    I agree with the{" "}
+                    I agree to the {" "} and {""}
+                    <a
+                      href="#pablo"
+                      className="text-blue-500"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      Terms of Use
+                    </a>
+                  </span>
+                  <span className="ml-2 text-sm font-semibold text-gray-700">
+                    and {" "}
                     <a
                       href="#pablo"
                       className="text-blue-500"

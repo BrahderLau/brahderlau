@@ -133,11 +133,11 @@ export default function Sidebar(props) {
             </span>
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-              <li className="items-center">
+              <li className="items-center flex">
                 <Link
                   onClick={() => setCollapseShow("hidden")}
                   className={
-                    "text-xs uppercase py-3 font-bold block " +
+                    "text-xs uppercase py-3 font-bold block" +
                     (window.location.href.indexOf("/home") !== -1
                       ? "text-blue-500 hover:text-blue-600"
                       : "text-gray-800 hover:text-gray-600")
@@ -710,7 +710,7 @@ export default function Sidebar(props) {
                         : "text-gray-500")
                     }
                   ></i>{" "}
-                  Match List
+                  New Match
                 </Link>
               </li>
 

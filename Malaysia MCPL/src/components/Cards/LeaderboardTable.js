@@ -181,7 +181,7 @@ export default function LeaderboardTable({ color }) {
                   (color === "light" ? "text-gray-800" : "text-white")
                 }
               >
-                Leaderboard  (Last Updated: 10 March 2021)
+                Leaderboard  (Last Updated: 15 March 2021 11:30PM)
               </h3>
             </div>
           </div>

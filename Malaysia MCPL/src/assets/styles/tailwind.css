@@ -2922,9 +2922,9 @@ video {
 }
 @keyframes slider {
     0%, 25%, 100%{left: 0}
-    
+
     30%, 55%{left: -100%}
-    
+
     60%, 85%{left: -200%}
 }
 .error {
@@ -2936,4 +2936,31 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+/*
+.container-cropper {
+  height: 90%;
+  padding: 20px;
+}
+
+.cropper {
+  height: 90%;
+  position: relative;
+}
+
+
+*/
+.subcontainer-buttons {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 300px;
+} 
+
+.slider {
+  display: flex;
+  width: 90%;
+  height: 100px;
 }
