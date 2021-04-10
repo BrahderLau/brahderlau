@@ -34,9 +34,9 @@ export default function Footer() {
                 src={require("assets/img/MCU_LOGO.png")}
               />
             </span>
-              <h4 className="text-3xl font-semibold">Malaysia Magic Chess Professional League</h4>
+              <h4 className="text-3xl font-semibold">MCU Championship</h4>
               <h5 className="text-lg mt-0 mb-2 text-gray-700">
-                Follow us on social media to get the latest news about Malaysia MCPL.
+                Follow us on social media to get the latest news about MCU championship.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
                 <button

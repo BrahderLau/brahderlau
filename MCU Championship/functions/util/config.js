@@ -1,8 +1,9 @@
 exports.config = {
-    apiKey: "AIzaSyC-5jd4AVkW3SOqPv6Cw_W6sawYIJm-wG8",
-    authDomain: "malaysia-mcpl.firebaseapp.com",
-    projectId: "malaysia-mcpl",
-    storageBucket: "malaysia-mcpl.appspot.com",
-    messagingSenderId: "350263329449",
-    appId: "1:350263329449:web:126dd978d9d4c669889fb8"
+    apiKey: "AIzaSyAlKtTA-ehPyFJpdKWNnO99WhTCteHQrQo",
+    authDomain: "mcu-championship.firebaseapp.com",
+    projectId: "mcu-championship",
+    storageBucket: "mcu-championship.appspot.com",
+    messagingSenderId: "404712575289",
+    appId: "1:404712575289:web:f84f995ef3b592cf5698e8",
+    measurementId: "G-ZNE2N19ZTK"
 };

@@ -65,7 +65,7 @@ export default function Sidebar(props) {
           {/* Brand */}
           <div className="flex flex-wrap justify-center md:flex-row">
             <span className="text-black font-bold text-base uppercase lg:inline-block font-semibold pb-4">
-                Malaysia MCPL (Beta)
+                MCU Championship (Beta)
             </span> 
             <div className="w-6/12 sm:w-4/12 px-6">
               <img
@@ -96,7 +96,7 @@ export default function Sidebar(props) {
             <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-gray-300">
               <div className="flex flex-wrap">
                 <div className="w-6/12 md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0 ">
-                    Malaysia MCPL (Beta)
+                    MCU Championship (Beta)
                 </div>
                 
                 <div className="w-6/12 flex justify-end">
