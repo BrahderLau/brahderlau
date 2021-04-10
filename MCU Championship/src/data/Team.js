@@ -36,14 +36,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 5,
-            losesCount: 2,
-            drawCount: 1,
-            previousRanking: 7,
-            currentRanking: 7,
-            totalPoints: 16,
-            totalIGS: 299,
+            matchCount: 19,
+            winsCount: 10,
+            losesCount: 7,
+            drawCount: 2,
+            previousRanking: 9,
+            currentRanking: 8,
+            totalPoints: 32,
+            totalIGS: 661,
             teamDivision: "Div 1"
         }       
     },
@@ -63,14 +63,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 2,
-            losesCount: 6,
-            drawCount: 0,
-            previousRanking: 15,
-            currentRanking: 15,
-            totalPoints: 6,
-            totalIGS: 251,
+            matchCount: 19,
+            winsCount: 7,
+            losesCount: 11,
+            drawCount: 1,
+            previousRanking: 14,
+            currentRanking: 13,
+            totalPoints: 22,
+            totalIGS: 580,
             teamDivision: "Div 1"
         }       
     },
@@ -90,14 +90,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 6,
-            losesCount: 1,
+            matchCount: 19,
+            winsCount: 11,
+            losesCount: 7,
             drawCount: 1,
-            previousRanking: 5,
-            currentRanking: 4,
-            totalPoints: 19,
-            totalIGS: 299,
+            previousRanking: 7,
+            currentRanking: 7,
+            totalPoints: 34,
+            totalIGS: 637,
             teamDivision: "Div 1"
         }       
     },
@@ -117,14 +117,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 6,
-            losesCount: 2,
+            matchCount: 19,
+            winsCount: 15,
+            losesCount: 4,
             drawCount: 0,
-            previousRanking: 6,
-            currentRanking: 6,
-            totalPoints: 18,
-            totalIGS: 293,
+            previousRanking: 3,
+            currentRanking: 3,
+            totalPoints: 45,
+            totalIGS: 711,
             teamDivision: "Div 1"
         }       
     },
@@ -144,14 +144,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 6,
-            losesCount: 1,
+            matchCount: 19,
+            winsCount: 15,
+            losesCount: 3,
             drawCount: 1,
-            previousRanking: 3,
+            previousRanking: 2,
             currentRanking: 2,
-            totalPoints: 19,
-            totalIGS: 314,
+            totalPoints: 46,
+            totalIGS: 748,
             teamDivision: "Div 1"
         }       
     },
@@ -171,14 +171,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 4,
-            losesCount: 3,
+            matchCount: 19,
+            winsCount: 12,
+            losesCount: 6,
             drawCount: 1,
-            previousRanking: 8,
-            currentRanking: 9,
-            totalPoints: 13,
-            totalIGS: 286,
+            previousRanking: 6,
+            currentRanking: 6,
+            totalPoints: 37,
+            totalIGS: 700,
             teamDivision: "Div 1"
         }       
     },
@@ -198,14 +198,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 1,
-            losesCount: 7,
-            drawCount: 0,
-            previousRanking: 19,
-            currentRanking: 19,
-            totalPoints: 3,
-            totalIGS: 219,
+            matchCount: 19,
+            winsCount: 4,
+            losesCount: 14,
+            drawCount: 1,
+            previousRanking: 18,
+            currentRanking: 18,
+            totalPoints: 13,
+            totalIGS: 492,
             teamDivision: "Div 2"
         }       
     },
@@ -225,14 +225,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 6,
+            matchCount: 19,
+            winsCount: 17,
             losesCount: 1,
             drawCount: 1,
-            previousRanking: 4,
-            currentRanking: 3,
-            totalPoints: 19,
-            totalIGS: 307,
+            previousRanking: 1,
+            currentRanking: 1,
+            totalPoints: 52,
+            totalIGS: 763,
             teamDivision: "Div 1"
         }       
     },
@@ -252,14 +252,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 3,
-            losesCount: 4,
-            drawCount: 1,
+            matchCount: 19,
+            winsCount: 7,
+            losesCount: 10,
+            drawCount: 2,
             previousRanking: 12,
             currentRanking: 12,
-            totalPoints: 10,
-            totalIGS: 281,
+            totalPoints: 23,
+            totalIGS: 604,
             teamDivision: "Div 1"
         }       
     },
@@ -279,14 +279,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 2,
-            losesCount: 6,
+            matchCount: 19,
+            winsCount: 3,
+            losesCount: 16,
             drawCount: 0,
-            previousRanking: 16,
-            currentRanking: 17,
-            totalPoints: 6,
-            totalIGS: 220,
+            previousRanking: 19,
+            currentRanking: 19,
+            totalPoints: 9,
+            totalIGS: 492,
             teamDivision: "Div 2"
         }       
     },
@@ -306,14 +306,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 3,
-            losesCount: 4,
+            matchCount: 19,
+            winsCount: 9,
+            losesCount: 9,
             drawCount: 1,
-            previousRanking: 14,
-            currentRanking: 13,
-            totalPoints: 10,
-            totalIGS: 258,
+            previousRanking: 10,
+            currentRanking: 10,
+            totalPoints: 28,
+            totalIGS: 632,
             teamDivision: "Div 1"
         }      
     },
@@ -333,15 +333,15 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 1,
-            losesCount: 7,
+            matchCount: 19,
+            winsCount: 7,
+            losesCount: 12,
             drawCount: 0,
-            previousRanking: 18,
-            currentRanking: 18,
-            totalPoints: 3,
-            totalIGS: 226,
-            teamDivision: "Div 2"
+            previousRanking: 17,
+            currentRanking: 14,
+            totalPoints: 21,
+            totalIGS: 616,
+            teamDivision: "Div 1"
         }      
     },
     {
@@ -360,14 +360,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 4,
-            losesCount: 4,
-            drawCount: 0,
-            previousRanking: 10,
+            matchCount: 19,
+            winsCount: 8,
+            losesCount: 10,
+            drawCount: 1,
+            previousRanking: 11,
             currentRanking: 11,
-            totalPoints: 12,
-            totalIGS: 255,
+            totalPoints: 25,
+            totalIGS: 609,
             teamDivision: "Div 1"
         }      
     },
@@ -387,14 +387,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
+            matchCount: 19,
             winsCount: 0,
-            losesCount: 8,
-            drawCount: 0,
+            losesCount: 17,
+            drawCount: 2,
             previousRanking: 20,
             currentRanking: 20,
-            totalPoints: 0,
-            totalIGS: 168,
+            totalPoints: 2,
+            totalIGS: 471,
             teamDivision: "Div 2"
         }      
     },
@@ -414,14 +414,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 7,
-            losesCount: 1,
+            matchCount: 19,
+            winsCount: 10,
+            losesCount: 9,
             drawCount: 0,
-            previousRanking: 2,
-            currentRanking: 1,
-            totalPoints: 21,
-            totalIGS: 291,
+            previousRanking: 8,
+            currentRanking: 9,
+            totalPoints: 30,
+            totalIGS: 642,
             teamDivision: "Div 1"
         }      
     },
@@ -441,14 +441,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 4,
-            losesCount: 2,
+            matchCount: 19,
+            winsCount: 13,
+            losesCount: 4,
             drawCount: 2,
-            previousRanking: 8,
-            currentRanking: 8,
-            totalPoints: 14,
-            totalIGS: 289,
+            previousRanking: 4,
+            currentRanking: 4,
+            totalPoints: 41,
+            totalIGS: 735,
             teamDivision: "Div 1"
         }      
     },
@@ -468,14 +468,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 6,
-            losesCount: 1,
-            drawCount: 1,
-            previousRanking: 1,
+            matchCount: 19,
+            winsCount: 13,
+            losesCount: 4,
+            drawCount: 2,
+            previousRanking: 5,
             currentRanking: 5,
-            totalPoints: 19,
-            totalIGS: 292,
+            totalPoints: 41,
+            totalIGS: 710,
             teamDivision: "Div 1"
         }      
     },
@@ -495,15 +495,15 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 43,
-            losesCount: 3,
+            matchCount: 19,
+            winsCount: 6,
+            losesCount: 12,
             drawCount: 1,
-            previousRanking: 11,
-            currentRanking: 10,
-            totalPoints: 13,
-            totalIGS: 260,
-            teamDivision: "Div 1"
+            previousRanking: 16,
+            currentRanking: 17,
+            totalPoints: 19,
+            totalIGS: 567,
+            teamDivision: "Div 2"
         }      
     },
     {
@@ -522,14 +522,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 2,
-            losesCount: 6,
-            drawCount: 0,
-            previousRanking: 17,
+            matchCount: 19,
+            winsCount: 6,
+            losesCount: 12,
+            drawCount: 1,
+            previousRanking: 15,
             currentRanking: 16,
-            totalPoints: 6,
-            totalIGS: 224,
+            totalPoints: 19,
+            totalIGS: 569,
             teamDivision: "Div 1"
         }      
     },
@@ -549,14 +549,14 @@ export const teamData = [
             }
         ],
         teamBattleDetails: {
-            matchCount: 8,
-            winsCount: 2,
-            losesCount: 5,
-            drawCount: 1,
+            matchCount: 19,
+            winsCount: 6,
+            losesCount: 11,
+            drawCount: 2,
             previousRanking: 13,
-            currentRanking: 14,
-            totalPoints: 7,
-            totalIGS: 243,
+            currentRanking: 15,
+            totalPoints: 20,
+            totalIGS: 590,
             teamDivision: "Div 1"
         }      
     },

@@ -181,7 +181,7 @@ export default function LeaderboardTable({ color }) {
                   (color === "light" ? "text-gray-800" : "text-white")
                 }
               >
-                Leaderboard  (Last Updated: 15 March 2021 11:30PM)
+                Leaderboard MCPL Season 0 [1/3/2021 - 4/4/2021] (Last Updated: 3 April 2021 11:00PM)
               </h3>
             </div>
           </div>
